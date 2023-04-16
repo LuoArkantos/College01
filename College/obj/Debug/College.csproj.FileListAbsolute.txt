@@ -12,3 +12,17 @@ C:\Users\luizf\College\College\obj\Debug\College.csproj.CopyComplete
 C:\Users\luizf\College\College\obj\Debug\College.exe
 C:\Users\luizf\College\College\obj\Debug\College.pdb
 C:\Users\luizf\College\College\obj\Debug\College.Frm_HomePage.resources
+C:\Users\luizf\College01\College\bin\Debug\College.exe.config
+C:\Users\luizf\College01\College\bin\Debug\College.exe
+C:\Users\luizf\College01\College\bin\Debug\College.pdb
+C:\Users\luizf\College01\College\bin\Debug\Cls_Uteis.dll
+C:\Users\luizf\College01\College\bin\Debug\Cls_Uteis.pdb
+C:\Users\luizf\College01\College\obj\Debug\College.csproj.AssemblyReference.cache
+C:\Users\luizf\College01\College\obj\Debug\College.csproj.SuggestedBindingRedirects.cache
+C:\Users\luizf\College01\College\obj\Debug\College.Frm_HomePage.resources
+C:\Users\luizf\College01\College\obj\Debug\College.Properties.Resources.resources
+C:\Users\luizf\College01\College\obj\Debug\College.csproj.GenerateResource.cache
+C:\Users\luizf\College01\College\obj\Debug\College.csproj.CoreCompileInputs.cache
+C:\Users\luizf\College01\College\obj\Debug\College.csproj.CopyComplete
+C:\Users\luizf\College01\College\obj\Debug\College.exe
+C:\Users\luizf\College01\College\obj\Debug\College.pdb

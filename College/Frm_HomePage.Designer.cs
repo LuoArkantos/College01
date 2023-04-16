@@ -96,14 +96,14 @@ namespace College
             // professorToolStripMenuItem4
             // 
             this.professorToolStripMenuItem4.Name = "professorToolStripMenuItem4";
-            this.professorToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.professorToolStripMenuItem4.Size = new System.Drawing.Size(144, 22);
             this.professorToolStripMenuItem4.Text = "Professor";
             this.professorToolStripMenuItem4.Click += new System.EventHandler(this.professorToolStripMenuItem4_Click);
             // 
             // coordenadorToolStripMenuItem
             // 
             this.coordenadorToolStripMenuItem.Name = "coordenadorToolStripMenuItem";
-            this.coordenadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.coordenadorToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.coordenadorToolStripMenuItem.Text = "Coordenador";
             this.coordenadorToolStripMenuItem.Click += new System.EventHandler(this.coordenadorToolStripMenuItem_Click);
             // 
@@ -114,7 +114,7 @@ namespace College
             this.alterarDadosToolStripMenuItem,
             this.boletimToolStripMenuItem});
             this.alunoToolStripMenuItem.Name = "alunoToolStripMenuItem";
-            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alunoToolStripMenuItem.Text = "Aluno";
             // 
             // buscarAlunoToolStripMenuItem
@@ -142,7 +142,7 @@ namespace College
             this.gerirNotasToolStripMenuItem,
             this.portfólioToolStripMenuItem});
             this.professorToolStripMenuItem.Name = "professorToolStripMenuItem";
-            this.professorToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.professorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.professorToolStripMenuItem.Text = "Professor";
             // 
             // turmaToolStripMenuItem
@@ -171,7 +171,7 @@ namespace College
             this.alterarDadosToolStripMenuItem1,
             this.médiaPorTurmaToolStripMenuItem});
             this.coordenaçãoToolStripMenuItem.Name = "coordenaçãoToolStripMenuItem";
-            this.coordenaçãoToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.coordenaçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.coordenaçãoToolStripMenuItem.Text = "Coordenação";
             // 
             // novoAlunoToolStripMenuItem
@@ -246,14 +246,16 @@ namespace College
             // desconectarToolStripMenuItem
             // 
             this.desconectarToolStripMenuItem.Name = "desconectarToolStripMenuItem";
-            this.desconectarToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.desconectarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.desconectarToolStripMenuItem.Text = "Desconectar";
+            this.desconectarToolStripMenuItem.Click += new System.EventHandler(this.desconectarToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // Frm_HomePage
             // 
