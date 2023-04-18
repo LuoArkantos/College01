@@ -113,8 +113,8 @@ namespace College
         private void Btn_Buscar_Click(object sender, EventArgs e)
         {
             Frm_BuscarAluno b = new Frm_BuscarAluno();
+            b.Show();
 
-            b.ShowDialog();
         }
     }
 }
