@@ -114,7 +114,7 @@ namespace College
         {
             Frm_BuscarAluno b = new Frm_BuscarAluno();
             b.Show();
-
+        
         }
     }
 }
