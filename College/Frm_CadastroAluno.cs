@@ -34,15 +34,14 @@ namespace College
             telefone2 = Msk_Contato2.Text;
             endereco = Txt_Endereco.Text;
 
-            Cls_Aluno aluno = new Cls_Aluno(nome,nomeMae,nomePai,nascimento,telefone1,telefone2,endereco);
-
+            //Cls_Aluno aluno = new Cls_Aluno();
 
 
             if ((nome != "") && (nomeMae != "") && (nascimento != "") && (telefone1 != "") && (endereco != ""))
             {
                 Cls_Aluno.CadastrarAluno(nome, nomeMae, nomePai, nascimento, telefone1, telefone2, endereco);
 
-                if (MessageBox.Show($"Aluno {aluno.Nome} cadastrado ! :)", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+                if (MessageBox.Show($"Aluno {nome} cadastrado ! :)", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
                 {
                     this.Close();
                 }

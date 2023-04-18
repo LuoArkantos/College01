@@ -27,3 +27,4 @@ C:\Users\luizf\College01\College\obj\Debug\College.csproj.CopyComplete
 C:\Users\luizf\College01\College\obj\Debug\College.exe
 C:\Users\luizf\College01\College\obj\Debug\College.pdb
 C:\Users\luizf\College01\College\obj\Debug\College.Frm_CadastroAluno.resources
+C:\Users\luizf\College01\College\obj\Debug\College.Frm_BuscarAluno.resources

@@ -43,12 +43,13 @@
             this.label11 = new System.Windows.Forms.Label();
             this.Lbl_Contato1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.Lbl_Endereço = new System.Windows.Forms.Label();
+            this.Lbl_Endereco = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.Lbl_Contato2 = new System.Windows.Forms.Label();
             this.Btn_EditarDados = new System.Windows.Forms.Button();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
             this.Btn_GerirNotas = new System.Windows.Forms.Button();
+            this.Lbl_Informacao = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Lbl_NomeInstituicao
@@ -83,6 +84,7 @@
             this.Btn_Buscar.TabIndex = 2;
             this.Btn_Buscar.Text = "Buscar";
             this.Btn_Buscar.UseVisualStyleBackColor = true;
+            this.Btn_Buscar.Click += new System.EventHandler(this.Btn_Buscar_Click);
             // 
             // Txt_NomeBusca
             // 
@@ -199,14 +201,14 @@
             this.label13.TabIndex = 13;
             this.label13.Text = "Contatos:";
             // 
-            // Lbl_Endereço
+            // Lbl_Endereco
             // 
-            this.Lbl_Endereço.AutoSize = true;
-            this.Lbl_Endereço.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Endereço.Location = new System.Drawing.Point(206, 416);
-            this.Lbl_Endereço.Name = "Lbl_Endereço";
-            this.Lbl_Endereço.Size = new System.Drawing.Size(0, 19);
-            this.Lbl_Endereço.TabIndex = 16;
+            this.Lbl_Endereco.AutoSize = true;
+            this.Lbl_Endereco.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Endereco.Location = new System.Drawing.Point(206, 416);
+            this.Lbl_Endereco.Name = "Lbl_Endereco";
+            this.Lbl_Endereco.Size = new System.Drawing.Size(0, 19);
+            this.Lbl_Endereco.TabIndex = 16;
             // 
             // label15
             // 
@@ -258,16 +260,27 @@
             this.Btn_GerirNotas.Text = "Gerir Notas";
             this.Btn_GerirNotas.UseVisualStyleBackColor = true;
             // 
+            // Lbl_Informacao
+            // 
+            this.Lbl_Informacao.AutoSize = true;
+            this.Lbl_Informacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Informacao.ForeColor = System.Drawing.Color.Red;
+            this.Lbl_Informacao.Location = new System.Drawing.Point(418, 129);
+            this.Lbl_Informacao.Name = "Lbl_Informacao";
+            this.Lbl_Informacao.Size = new System.Drawing.Size(0, 20);
+            this.Lbl_Informacao.TabIndex = 21;
+            // 
             // Frm_BuscarAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(848, 572);
+            this.Controls.Add(this.Lbl_Informacao);
             this.Controls.Add(this.Btn_GerirNotas);
             this.Controls.Add(this.Btn_Cancelar);
             this.Controls.Add(this.Btn_EditarDados);
             this.Controls.Add(this.Lbl_Contato2);
-            this.Controls.Add(this.Lbl_Endereço);
+            this.Controls.Add(this.Lbl_Endereco);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.Lbl_Contato1);
             this.Controls.Add(this.label13);
@@ -310,11 +323,12 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label Lbl_Contato1;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label Lbl_Endereço;
+        private System.Windows.Forms.Label Lbl_Endereco;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label Lbl_Contato2;
         private System.Windows.Forms.Button Btn_EditarDados;
         private System.Windows.Forms.Button Btn_Cancelar;
         private System.Windows.Forms.Button Btn_GerirNotas;
+        private System.Windows.Forms.Label Lbl_Informacao;
     }
 }

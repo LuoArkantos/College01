@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
 using System.Text;
@@ -21,16 +22,17 @@ namespace Cls_Uteis
         public string Telefone2 { get; set; }
         public string Endereco { get; set; }
 
-        public Cls_Aluno(string nome, string nomeMae, string nomePai, string nascimento, string telefone1, string telefone2, string endereco)
+        public Cls_Aluno()
         {
-            Nome = nome;
-            NomeMae = nomeMae;
-            NomePai = nomePai;
-            Nascimento = nascimento;
-            Telefone1 = telefone1;
-            Telefone2 = telefone2;
-            Endereco = endereco;
-        }
+            //Nome = nome;
+            //NomeMae = nomeMae;
+            //NomePai = nomePai;
+            //Nascimento = nascimento;
+            //Telefone1 = telefone1;
+            //Telefone2 = telefone2;
+            //Endereco = endereco;
+ 
+    }
         
 
         
@@ -43,17 +45,16 @@ namespace Cls_Uteis
             //new FileStream(caminhoDoArquivo, FileMode.Open);
             using (var fluxoDeArquivo = new FileStream(caminhoDoArquivo, FileMode.Append))
             {
-                Cls_Aluno aluno = new Cls_Aluno(nome, nomeMae, nomePai, nascimento, telefone1, telefone2, endereco);
+                Cls_Aluno aluno = new Cls_Aluno();
+                aluno.Nome=nome;
+                aluno.NomeMae = nomeMae;
+                aluno.NomePai = nomePai;
+                aluno.Nascimento = nascimento;
+                aluno.Telefone1 = telefone1;
+                aluno.Telefone2 = telefone2;
+                aluno.Endereco = endereco;
 
-                var dadosAluno = $"\nNome: {nome}; " +
-                    $"\nNome da Mãe: {nomeMae}; " +
-                    $"\nNome do Pai: {nomePai}; " +
-                    $"\nNascimento: {nascimento}; " +
-                    $"\nContato 1: {telefone1}; " +
-                    $"\nContato2: {telefone2}; " +
-                    $"\nEndereço: {endereco}\n " +
-                    $"============================" +
-                    $"\n\n";//Dado q vai ser colocado no documento
+                var dadosAluno = $"\n{nome};{nomeMae};{nomePai};{nascimento};{telefone1};{telefone2};{endereco}";//Dado q vai ser colocado no documento
 
                 var encoding = Encoding.UTF8; //cria encoding pra converter os bytes
 
@@ -62,6 +63,43 @@ namespace Cls_Uteis
                 fluxoDeArquivo.Write(bytes, 0, bytes.Length);//vai escrever a var bytes(que é os dados da conta convertidos para UTF8), desde o índice 0 do fluxo, até o tamanho do fluxo... usa length pq não sabemos o tamanho de bytes do fluxo.. assim pegamos o tamanho total.
             }
 
+        }
+        public static void MostrarAluno()
+        {
+            
+        }
+        public static void EncontrarAluno(string nomeBusca)
+        {
+            string localDoArquivo = "RelacaoDeAlunos.csv";
+            string nomeDeBusca = nomeBusca;
+
+            string[] linhas = File.ReadAllLines(localDoArquivo);//Vai criar a lista[] de linhas lendo as linhas do arquivo
+
+            foreach(string linha in linhas)
+            {
+                string[] dado = linha.Split(';');
+
+                if (dado[0] == nomeDeBusca)
+                {
+                    string nome = dado[0];
+                    string nomeMae = dado[1];
+                    string nomePai = dado[2];
+                    string nascimento = dado[3];
+                    string contato1 = dado[4];
+                    string contato2 = dado[5];
+                    string endereco = dado[6];
+
+                    //Lbl_Nome.Text = nome;
+                    //Lbl_NomeMae.Text = nomeMae;
+                    //Lbl_NomePai.Text = nomePai;
+                    //Lbl_Nascimento.Text = nascimento;
+                    //Lbl_Contato1.Text = contato1;
+                    //Lbl_Contato2.Text = contato2;
+                    //Lbl_Endereco.Text = endereco;
+
+                    break;
+                }
+            }
         }
         public static bool BuscarAluno(string busca)
         {
@@ -93,6 +131,7 @@ namespace Cls_Uteis
                 array.Add(contato1);
                 array.Add(contato2);
                 array.Add(contato1);
+                array.Add(endereco);
                 
             }
             bool existe = false;
