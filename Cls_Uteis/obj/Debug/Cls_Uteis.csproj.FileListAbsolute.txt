@@ -4,3 +4,9 @@ C:\Users\luizf\College\Cls_Uteis\obj\Debug\Cls_Uteis.csproj.AssemblyReference.ca
 C:\Users\luizf\College\Cls_Uteis\obj\Debug\Cls_Uteis.csproj.CoreCompileInputs.cache
 C:\Users\luizf\College\Cls_Uteis\obj\Debug\Cls_Uteis.dll
 C:\Users\luizf\College\Cls_Uteis\obj\Debug\Cls_Uteis.pdb
+C:\Users\luizf\College01\Cls_Uteis\bin\Debug\Cls_Uteis.dll
+C:\Users\luizf\College01\Cls_Uteis\bin\Debug\Cls_Uteis.pdb
+C:\Users\luizf\College01\Cls_Uteis\obj\Debug\Cls_Uteis.csproj.AssemblyReference.cache
+C:\Users\luizf\College01\Cls_Uteis\obj\Debug\Cls_Uteis.csproj.CoreCompileInputs.cache
+C:\Users\luizf\College01\Cls_Uteis\obj\Debug\Cls_Uteis.dll
+C:\Users\luizf\College01\Cls_Uteis\obj\Debug\Cls_Uteis.pdb

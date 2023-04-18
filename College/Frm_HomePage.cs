@@ -103,5 +103,16 @@ namespace College
         {
             Application.Exit();
         }
+
+        private void Btn_Cadastro_Click(object sender, EventArgs e)
+        {
+            Frm_CadastroAluno c = new Frm_CadastroAluno();
+            c.ShowDialog();
+        }
+
+        private void Btn_Buscar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

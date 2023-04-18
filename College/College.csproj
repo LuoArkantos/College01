@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_BuscarAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BuscarAluno.Designer.cs">
+      <DependentUpon>Frm_BuscarAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CadastroAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CadastroAluno.Designer.cs">
+      <DependentUpon>Frm_CadastroAluno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_BuscarAluno.resx">
+      <DependentUpon>Frm_BuscarAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CadastroAluno.resx">
+      <DependentUpon>Frm_CadastroAluno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_HomePage.resx">
       <DependentUpon>Frm_HomePage.cs</DependentUpon>
     </EmbeddedResource>
