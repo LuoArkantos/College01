@@ -77,7 +77,7 @@
             // Btn_Buscar
             // 
             this.Btn_Buscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Buscar.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.Btn_Buscar.DialogResult = System.Windows.Forms.DialogResult.Yes;
             this.Btn_Buscar.Location = new System.Drawing.Point(633, 152);
             this.Btn_Buscar.Name = "Btn_Buscar";
             this.Btn_Buscar.Size = new System.Drawing.Size(75, 32);

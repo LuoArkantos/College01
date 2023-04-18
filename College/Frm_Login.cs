@@ -37,5 +37,10 @@ namespace College
             DialogResult = DialogResult.Cancel;
             this.Close();
         }
+
+        private void Btn_OK_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

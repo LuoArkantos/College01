@@ -23,7 +23,7 @@ namespace College
         private void Btn_Buscar_Click(object sender, EventArgs e)
         {
             nomeBusca = Txt_NomeBusca.Text;
-
+            
             string localDoArquivo = "RelacaoDeAlunos.csv";
             string nomeDeBusca = nomeBusca;
 
@@ -59,7 +59,7 @@ namespace College
                 }
                 else
                 {
-                    Lbl_Informacao.Text = "Alunoi não encontrado";
+                    Lbl_Informacao.Text = "Aluno não encontrado";
                 }
 
             }
