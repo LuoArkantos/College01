@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,8 +47,15 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_Bimestre_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frm_Bimestre_UC.Designer.cs">
+      <DependentUpon>Frm_Bimestre_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_BuscarAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +67,12 @@
     </Compile>
     <Compile Include="Frm_CadastroAluno.Designer.cs">
       <DependentUpon>Frm_CadastroAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_GerenciamentoDeNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_GerenciamentoDeNotas.Designer.cs">
+      <DependentUpon>Frm_GerenciamentoDeNotas.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_HomePage.cs">
       <SubType>Form</SubType>
@@ -72,11 +88,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_Bimestre_UC.resx">
+      <DependentUpon>Frm_Bimestre_UC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_BuscarAluno.resx">
       <DependentUpon>Frm_BuscarAluno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_CadastroAluno.resx">
       <DependentUpon>Frm_CadastroAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_GerenciamentoDeNotas.resx">
+      <DependentUpon>Frm_GerenciamentoDeNotas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_HomePage.resx">
       <DependentUpon>Frm_HomePage.cs</DependentUpon>
