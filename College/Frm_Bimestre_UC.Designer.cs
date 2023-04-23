@@ -36,18 +36,22 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.maskedTextBox10 = new System.Windows.Forms.MaskedTextBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.Msk_Media = new System.Windows.Forms.MaskedTextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Msk_AtvCaderno1 = new System.Windows.Forms.MaskedTextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Msk_Trabalho1 = new System.Windows.Forms.MaskedTextBox();
+            this.Msk_Trabalho2 = new System.Windows.Forms.MaskedTextBox();
+            this.Msk_Prova = new System.Windows.Forms.MaskedTextBox();
+            this.Msk_NotaExtra = new System.Windows.Forms.MaskedTextBox();
+            this.Msk_AtvCaderno2 = new System.Windows.Forms.MaskedTextBox();
+            this.Msk_AtvCaderno3 = new System.Windows.Forms.MaskedTextBox();
+            this.Msk_AtvCaderno4 = new System.Windows.Forms.MaskedTextBox();
+            this.Msk_AtvCaderno5 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -126,12 +130,22 @@
             // 
             // splitContainer1
             // 
+            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(42, 96);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.splitContainer1.Panel1.Controls.Add(this.label13);
+            this.splitContainer1.Panel1.Controls.Add(this.label12);
+            this.splitContainer1.Panel1.Controls.Add(this.label11);
+            this.splitContainer1.Panel1.Controls.Add(this.label10);
+            this.splitContainer1.Panel1.Controls.Add(this.label9);
             this.splitContainer1.Panel1.Controls.Add(this.label4);
             this.splitContainer1.Panel1.Controls.Add(this.label5);
             this.splitContainer1.Panel1.Controls.Add(this.label7);
@@ -139,104 +153,23 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.maskedTextBox9);
-            this.splitContainer1.Panel2.Controls.Add(this.maskedTextBox8);
-            this.splitContainer1.Panel2.Controls.Add(this.maskedTextBox6);
-            this.splitContainer1.Panel2.Controls.Add(this.maskedTextBox7);
-            this.splitContainer1.Panel2.Controls.Add(this.maskedTextBox5);
-            this.splitContainer1.Panel2.Controls.Add(this.maskedTextBox3);
-            this.splitContainer1.Panel2.Controls.Add(this.maskedTextBox4);
-            this.splitContainer1.Panel2.Controls.Add(this.maskedTextBox2);
-            this.splitContainer1.Panel2.Controls.Add(this.maskedTextBox1);
-            this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel1);
+            this.splitContainer1.Panel2.Controls.Add(this.Msk_NotaExtra);
+            this.splitContainer1.Panel2.Controls.Add(this.Msk_Prova);
+            this.splitContainer1.Panel2.Controls.Add(this.Msk_Trabalho2);
+            this.splitContainer1.Panel2.Controls.Add(this.Msk_Trabalho1);
+            this.splitContainer1.Panel2.Controls.Add(this.Msk_AtvCaderno5);
+            this.splitContainer1.Panel2.Controls.Add(this.Msk_AtvCaderno4);
+            this.splitContainer1.Panel2.Controls.Add(this.Msk_AtvCaderno3);
+            this.splitContainer1.Panel2.Controls.Add(this.Msk_AtvCaderno2);
+            this.splitContainer1.Panel2.Controls.Add(this.Msk_AtvCaderno1);
+            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(672, 269);
             this.splitContainer1.SplitterDistance = 224;
             this.splitContainer1.TabIndex = 9;
             // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(15, 29);
-            this.maskedTextBox1.Mask = "00.00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(57, 29);
-            this.maskedTextBox1.TabIndex = 14;
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(102, 29);
-            this.maskedTextBox2.Mask = "00.00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(57, 29);
-            this.maskedTextBox2.TabIndex = 15;
-            // 
-            // maskedTextBox3
-            // 
-            this.maskedTextBox3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox3.Location = new System.Drawing.Point(278, 29);
-            this.maskedTextBox3.Mask = "00.00";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(57, 29);
-            this.maskedTextBox3.TabIndex = 17;
-            // 
-            // maskedTextBox4
-            // 
-            this.maskedTextBox4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox4.Location = new System.Drawing.Point(191, 29);
-            this.maskedTextBox4.Mask = "00.00";
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(57, 29);
-            this.maskedTextBox4.TabIndex = 16;
-            // 
-            // maskedTextBox5
-            // 
-            this.maskedTextBox5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox5.Location = new System.Drawing.Point(363, 29);
-            this.maskedTextBox5.Mask = "00.00";
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.Size = new System.Drawing.Size(57, 29);
-            this.maskedTextBox5.TabIndex = 18;
-            // 
-            // maskedTextBox6
-            // 
-            this.maskedTextBox6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox6.Location = new System.Drawing.Point(363, 92);
-            this.maskedTextBox6.Mask = "00.00";
-            this.maskedTextBox6.Name = "maskedTextBox6";
-            this.maskedTextBox6.Size = new System.Drawing.Size(57, 29);
-            this.maskedTextBox6.TabIndex = 20;
-            // 
-            // maskedTextBox7
-            // 
-            this.maskedTextBox7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox7.Location = new System.Drawing.Point(278, 92);
-            this.maskedTextBox7.Mask = "00.00";
-            this.maskedTextBox7.Name = "maskedTextBox7";
-            this.maskedTextBox7.Size = new System.Drawing.Size(57, 29);
-            this.maskedTextBox7.TabIndex = 19;
-            // 
-            // maskedTextBox8
-            // 
-            this.maskedTextBox8.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox8.Location = new System.Drawing.Point(363, 151);
-            this.maskedTextBox8.Mask = "00.00";
-            this.maskedTextBox8.Name = "maskedTextBox8";
-            this.maskedTextBox8.Size = new System.Drawing.Size(57, 29);
-            this.maskedTextBox8.TabIndex = 21;
-            // 
-            // maskedTextBox9
-            // 
-            this.maskedTextBox9.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox9.Location = new System.Drawing.Point(363, 201);
-            this.maskedTextBox9.Mask = "00.00";
-            this.maskedTextBox9.Name = "maskedTextBox9";
-            this.maskedTextBox9.Size = new System.Drawing.Size(57, 29);
-            this.maskedTextBox9.TabIndex = 22;
-            // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(533, 376);
@@ -245,41 +178,153 @@
             this.label8.TabIndex = 10;
             this.label8.Text = "Média";
             // 
-            // maskedTextBox10
+            // Msk_Media
             // 
-            this.maskedTextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.maskedTextBox10.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox10.Location = new System.Drawing.Point(633, 371);
-            this.maskedTextBox10.Mask = "00.00";
-            this.maskedTextBox10.Name = "maskedTextBox10";
-            this.maskedTextBox10.Size = new System.Drawing.Size(57, 29);
-            this.maskedTextBox10.TabIndex = 23;
+            this.Msk_Media.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Msk_Media.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_Media.Location = new System.Drawing.Point(633, 371);
+            this.Msk_Media.Mask = "00.00";
+            this.Msk_Media.Name = "Msk_Media";
+            this.Msk_Media.Size = new System.Drawing.Size(57, 29);
+            this.Msk_Media.TabIndex = 23;
             // 
-            // tableLayoutPanel1
+            // label12
             // 
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(438, 263);
-            this.tableLayoutPanel1.TabIndex = 23;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(201, 213);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(21, 16);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "≤1";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(17, 230);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(209, 16);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "Caso julgue necessário (0.0 to 1.0)";
+            // 
+            // Msk_AtvCaderno1
+            // 
+            this.Msk_AtvCaderno1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_AtvCaderno1.Location = new System.Drawing.Point(15, 29);
+            this.Msk_AtvCaderno1.Mask = "00.00";
+            this.Msk_AtvCaderno1.Name = "Msk_AtvCaderno1";
+            this.Msk_AtvCaderno1.Size = new System.Drawing.Size(57, 29);
+            this.Msk_AtvCaderno1.TabIndex = 14;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(201, 104);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(18, 16);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "/3";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(201, 164);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(18, 16);
+            this.label11.TabIndex = 9;
+            this.label11.Text = "/5";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(204, 37);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(18, 16);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "/2";
+            // 
+            // Msk_Trabalho1
+            // 
+            this.Msk_Trabalho1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_Trabalho1.Location = new System.Drawing.Point(278, 92);
+            this.Msk_Trabalho1.Mask = "00.00";
+            this.Msk_Trabalho1.Name = "Msk_Trabalho1";
+            this.Msk_Trabalho1.Size = new System.Drawing.Size(57, 29);
+            this.Msk_Trabalho1.TabIndex = 19;
+            // 
+            // Msk_Trabalho2
+            // 
+            this.Msk_Trabalho2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_Trabalho2.Location = new System.Drawing.Point(363, 92);
+            this.Msk_Trabalho2.Mask = "00.00";
+            this.Msk_Trabalho2.Name = "Msk_Trabalho2";
+            this.Msk_Trabalho2.Size = new System.Drawing.Size(57, 29);
+            this.Msk_Trabalho2.TabIndex = 20;
+            // 
+            // Msk_Prova
+            // 
+            this.Msk_Prova.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_Prova.Location = new System.Drawing.Point(363, 151);
+            this.Msk_Prova.Mask = "00.00";
+            this.Msk_Prova.Name = "Msk_Prova";
+            this.Msk_Prova.Size = new System.Drawing.Size(57, 29);
+            this.Msk_Prova.TabIndex = 21;
+            // 
+            // Msk_NotaExtra
+            // 
+            this.Msk_NotaExtra.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_NotaExtra.Location = new System.Drawing.Point(363, 201);
+            this.Msk_NotaExtra.Mask = "00.00";
+            this.Msk_NotaExtra.Name = "Msk_NotaExtra";
+            this.Msk_NotaExtra.Size = new System.Drawing.Size(57, 29);
+            this.Msk_NotaExtra.TabIndex = 22;
+            // 
+            // Msk_AtvCaderno2
+            // 
+            this.Msk_AtvCaderno2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_AtvCaderno2.Location = new System.Drawing.Point(102, 29);
+            this.Msk_AtvCaderno2.Mask = "00.00";
+            this.Msk_AtvCaderno2.Name = "Msk_AtvCaderno2";
+            this.Msk_AtvCaderno2.Size = new System.Drawing.Size(57, 29);
+            this.Msk_AtvCaderno2.TabIndex = 15;
+            // 
+            // Msk_AtvCaderno3
+            // 
+            this.Msk_AtvCaderno3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_AtvCaderno3.Location = new System.Drawing.Point(191, 29);
+            this.Msk_AtvCaderno3.Mask = "00.00";
+            this.Msk_AtvCaderno3.Name = "Msk_AtvCaderno3";
+            this.Msk_AtvCaderno3.Size = new System.Drawing.Size(57, 29);
+            this.Msk_AtvCaderno3.TabIndex = 16;
+            // 
+            // Msk_AtvCaderno4
+            // 
+            this.Msk_AtvCaderno4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_AtvCaderno4.Location = new System.Drawing.Point(278, 29);
+            this.Msk_AtvCaderno4.Mask = "00.00";
+            this.Msk_AtvCaderno4.Name = "Msk_AtvCaderno4";
+            this.Msk_AtvCaderno4.Size = new System.Drawing.Size(57, 29);
+            this.Msk_AtvCaderno4.TabIndex = 17;
+            // 
+            // Msk_AtvCaderno5
+            // 
+            this.Msk_AtvCaderno5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_AtvCaderno5.Location = new System.Drawing.Point(363, 29);
+            this.Msk_AtvCaderno5.Mask = "00.00";
+            this.Msk_AtvCaderno5.Name = "Msk_AtvCaderno5";
+            this.Msk_AtvCaderno5.Size = new System.Drawing.Size(57, 29);
+            this.Msk_AtvCaderno5.TabIndex = 18;
             // 
             // Frm_Bimestre_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Controls.Add(this.maskedTextBox10);
+            this.Controls.Add(this.Msk_Media);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -308,17 +353,21 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox9;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox8;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox6;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox7;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox10;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.MaskedTextBox Msk_Media;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.MaskedTextBox Msk_NotaExtra;
+        private System.Windows.Forms.MaskedTextBox Msk_Prova;
+        private System.Windows.Forms.MaskedTextBox Msk_Trabalho2;
+        private System.Windows.Forms.MaskedTextBox Msk_Trabalho1;
+        private System.Windows.Forms.MaskedTextBox Msk_AtvCaderno5;
+        private System.Windows.Forms.MaskedTextBox Msk_AtvCaderno4;
+        private System.Windows.Forms.MaskedTextBox Msk_AtvCaderno3;
+        private System.Windows.Forms.MaskedTextBox Msk_AtvCaderno2;
+        private System.Windows.Forms.MaskedTextBox Msk_AtvCaderno1;
     }
 }
