@@ -50,11 +50,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frm_ListaDeTurmas.cs">
+    <Compile Include="Frm_ListaDeAlunos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_ListaDeTurmas.Designer.cs">
-      <DependentUpon>Frm_ListaDeTurmas.cs</DependentUpon>
+    <Compile Include="Frm_ListaDeAlunos.Designer.cs">
+      <DependentUpon>Frm_ListaDeAlunos.cs</DependentUpon>
     </Compile>
     <Compile Include="Gerenciamento de Notas UC\Frm_Bimestre_UC.cs">
       <SubType>UserControl</SubType>
@@ -100,8 +100,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frm_ListaDeTurmas.resx">
-      <DependentUpon>Frm_ListaDeTurmas.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_ListaDeAlunos.resx">
+      <DependentUpon>Frm_ListaDeAlunos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Gerenciamento de Notas UC\Frm_Bimestre_UC.resx">
       <DependentUpon>Frm_Bimestre_UC.cs</DependentUpon>
@@ -134,6 +134,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\Cls_Uteis.Cls_Aluno.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
