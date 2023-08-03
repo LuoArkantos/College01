@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Tbc_Display = new System.Windows.Forms.TabControl();
             this.Btn_ShowDadosDoAluno = new System.Windows.Forms.Button();
             this.Btn_ShowNotasDoBimestre = new System.Windows.Forms.Button();
             this.Btn_ShowFrequenciaDoAluno = new System.Windows.Forms.Button();
@@ -50,13 +50,13 @@
             this.panel1.Size = new System.Drawing.Size(212, 461);
             this.panel1.TabIndex = 2;
             // 
-            // tabControl1
+            // Tbc_Display
             // 
-            this.tabControl1.Location = new System.Drawing.Point(208, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(577, 460);
-            this.tabControl1.TabIndex = 4;
+            this.Tbc_Display.Location = new System.Drawing.Point(208, 0);
+            this.Tbc_Display.Name = "Tbc_Display";
+            this.Tbc_Display.SelectedIndex = 0;
+            this.Tbc_Display.Size = new System.Drawing.Size(577, 460);
+            this.Tbc_Display.TabIndex = 4;
             // 
             // Btn_ShowDadosDoAluno
             // 
@@ -66,6 +66,7 @@
             this.Btn_ShowDadosDoAluno.TabIndex = 0;
             this.Btn_ShowDadosDoAluno.Text = "Dados do Aluno";
             this.Btn_ShowDadosDoAluno.UseVisualStyleBackColor = true;
+            this.Btn_ShowDadosDoAluno.Click += new System.EventHandler(this.Btn_ShowDadosDoAluno_Click);
             // 
             // Btn_ShowNotasDoBimestre
             // 
@@ -109,7 +110,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.Tbc_Display);
             this.Controls.Add(this.panel1);
             this.IsMdiContainer = true;
             this.Name = "Frm_GerenciamentoDeNotas";
@@ -127,6 +128,6 @@
         private System.Windows.Forms.Button Btn_ShowFrequenciaDoAluno;
         private System.Windows.Forms.Button Btn_ShowNotasDoBimestre;
         private System.Windows.Forms.Button Btn_ShowDadosDoAluno;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl Tbc_Display;
     }
 }
