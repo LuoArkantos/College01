@@ -41,7 +41,12 @@ namespace College
                         string nascimento = dado[3];
                         string contato1 = dado[4];
                         string contato2 = dado[5];
-                        string endereco = dado[6];
+                        string rua = dado[6];
+                        string numero = dado[7];
+                        string cep = dado[8];
+                        string bairro = dado[9];
+                        string cidade = dado[10];
+                        string uf = dado[11];
 
                         Lbl_Nome.Text = nome;
                         Lbl_NomeMae.Text = nomeMae;
@@ -49,7 +54,7 @@ namespace College
                         Lbl_Nascimento.Text = nascimento;
                         Lbl_Contato1.Text = contato1;
                         Lbl_Contato2.Text = contato2;
-                        Lbl_Endereco.Text = endereco;
+                        Lbl_Endereco.Text = ($"Rua {rua}, Nº {numero} \nCEP {cep}, Bairro {bairro}, \n{cidade+" "+uf.ToUpper()}");
 
                         return; // exit the function after finding a match
                     }
@@ -109,6 +114,21 @@ namespace College
                 // handle any exceptions that occurred while reading the file
                 MessageBox.Show($"Erro ao ler o arquivo: {ex.Message}");
             }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 

@@ -20,7 +20,12 @@ namespace Cls_Uteis
         public string Nascimento { get; set; }
         public string Telefone1 { get; set; }
         public string Telefone2 { get; set; }
-        public string Endereco { get; set; }
+        public string Rua { get; set; }
+        public string Cep { get; set; }
+        public string Numero { get; set; }
+        public string Bairro { get; set; }
+        public string Cidade { get; set; }
+        public string Uf { get; set; }
 
         public Cls_Aluno()
         {
@@ -36,7 +41,7 @@ namespace Cls_Uteis
         
 
         
-        public static void CadastrarAluno(string nome, string nomeMae, string nomePai, string nascimento, string telefone1, string telefone2, string endereco)
+        public static void CadastrarAluno(string nome, string nomeMae, string nomePai, string nascimento, string telefone1, string telefone2, string rua, string numero, string cep, string bairro, string cidade, string uf)
 
         {
             
@@ -52,9 +57,14 @@ namespace Cls_Uteis
                 aluno.Nascimento = nascimento;
                 aluno.Telefone1 = telefone1;
                 aluno.Telefone2 = telefone2;
-                aluno.Endereco = endereco;
+                aluno.Rua = rua;
+                aluno.Numero = numero;
+                aluno.Cep = cep;
+                aluno.Bairro = bairro;
+                aluno.Cidade = cidade;
+                aluno.Uf = uf;
 
-                var dadosAluno = $"\n{nome};{nomeMae};{nomePai};{nascimento};{telefone1};{telefone2};{endereco}";//Dado q vai ser colocado no documento
+                var dadosAluno = $"\n{nome};{nomeMae};{nomePai};{nascimento};{telefone1};{telefone2};{rua};{numero};{cep};{bairro};{cidade};{uf}";//Dado q vai ser colocado no documento
 
                 var encoding = Encoding.UTF8; //cria encoding pra converter os bytes
 
