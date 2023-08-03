@@ -73,7 +73,7 @@ namespace College
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(686, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(958, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -271,7 +271,7 @@ namespace College
             this.Btn_Cadastro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_Cadastro.FlatAppearance.BorderSize = 0;
             this.Btn_Cadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Cadastro.Location = new System.Drawing.Point(118, 160);
+            this.Btn_Cadastro.Location = new System.Drawing.Point(247, 195);
             this.Btn_Cadastro.Name = "Btn_Cadastro";
             this.Btn_Cadastro.Size = new System.Drawing.Size(85, 85);
             this.Btn_Cadastro.TabIndex = 1;
@@ -286,7 +286,7 @@ namespace College
             this.Btn_GerirNotas.FlatAppearance.BorderSize = 0;
             this.Btn_GerirNotas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_GerirNotas.ForeColor = System.Drawing.Color.Transparent;
-            this.Btn_GerirNotas.Location = new System.Drawing.Point(308, 160);
+            this.Btn_GerirNotas.Location = new System.Drawing.Point(437, 195);
             this.Btn_GerirNotas.Name = "Btn_GerirNotas";
             this.Btn_GerirNotas.Size = new System.Drawing.Size(85, 85);
             this.Btn_GerirNotas.TabIndex = 2;
@@ -299,7 +299,7 @@ namespace College
             this.Btn_Buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn_Buscar.FlatAppearance.BorderSize = 0;
             this.Btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Buscar.Location = new System.Drawing.Point(502, 160);
+            this.Btn_Buscar.Location = new System.Drawing.Point(631, 195);
             this.Btn_Buscar.Name = "Btn_Buscar";
             this.Btn_Buscar.Size = new System.Drawing.Size(85, 85);
             this.Btn_Buscar.TabIndex = 3;
@@ -313,7 +313,7 @@ namespace College
             this.Lbl_Cadastro.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Lbl_Cadastro.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Cadastro.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.Lbl_Cadastro.Location = new System.Drawing.Point(85, 248);
+            this.Lbl_Cadastro.Location = new System.Drawing.Point(214, 283);
             this.Lbl_Cadastro.Name = "Lbl_Cadastro";
             this.Lbl_Cadastro.Size = new System.Drawing.Size(152, 20);
             this.Lbl_Cadastro.TabIndex = 4;
@@ -326,11 +326,11 @@ namespace College
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label1.Location = new System.Drawing.Point(296, 248);
+            this.label1.Location = new System.Drawing.Point(425, 283);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 20);
+            this.label1.Size = new System.Drawing.Size(117, 20);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Gerir Notas";
+            this.label1.Text = "Gerir Turma";
             // 
             // label2
             // 
@@ -339,7 +339,7 @@ namespace College
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label2.Location = new System.Drawing.Point(482, 248);
+            this.label2.Location = new System.Drawing.Point(611, 283);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 6;
@@ -351,7 +351,7 @@ namespace College
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::College.Properties.Resources.escola1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(686, 390);
+            this.ClientSize = new System.Drawing.Size(958, 461);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Lbl_Cadastro);
@@ -364,6 +364,7 @@ namespace College
             this.Name = "Frm_HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_HomePage";
+            this.Load += new System.EventHandler(this.Frm_HomePage_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

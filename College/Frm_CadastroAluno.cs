@@ -32,7 +32,7 @@ namespace College
             nascimento = Msk_Nascimento.Text;
             telefone1 = Msk_Contato1.Text;
             telefone2 = Msk_Contato2.Text;
-            endereco = Txt_Endereco.Text;
+            //endereco = Txt_Endereco.Text;
 
             //Cls_Aluno aluno = new Cls_Aluno();
 
@@ -57,6 +57,16 @@ namespace College
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
             Btn_Cancelar.DialogResult = DialogResult.Cancel;
+        }
+
+        private void Lbl_NomeMae_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

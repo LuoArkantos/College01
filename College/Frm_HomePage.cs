@@ -116,5 +116,11 @@ namespace College
             b.Show();
         
         }
+
+        private void Frm_HomePage_Load(object sender, EventArgs e)
+        {
+            Frm_Login l = new Frm_Login();
+            l.ShowDialog();
+        }
     }
 }
