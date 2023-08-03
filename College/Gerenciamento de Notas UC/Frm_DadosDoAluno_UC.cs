@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace College
+namespace College.Gerenciamento_de_Notas_UC
 {
-    public partial class Frm_Bimestre_UC : UserControl
+    public partial class Frm_DadosDoAluno_UC : UserControl
     {
-        public Frm_Bimestre_UC()
+        public Frm_DadosDoAluno_UC()
         {
             InitializeComponent();
-        }
-
-        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

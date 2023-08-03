@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using College.Gerenciamento_de_Notas_UC;
 
 namespace College
 {
@@ -38,16 +39,17 @@ namespace College
 
         private void Btn_ShowDadosDoAluno_Click(object sender, EventArgs e)
         {
-            Frm_Bimestre_UC u = new Frm_Bimestre_UC();
+            Frm_DadosDoAluno_UC u = new Frm_DadosDoAluno_UC();
             TabPage tab = new TabPage();
 
             u.Dock = DockStyle.Fill;
-            tab.Name = "Bimestre";
-            tab.Text = "Bimestre1";
+            tab.Name = "Dados do Aluno";
+            tab.Text = "Dados do(a) Aluno(a)";
             tab.Controls.Add(u);
 
-            if (Tbc_Display.TabCount < 1)
+            if (Tbc_Display.TabCount <= 1)
             {
+                Tbc_Display.TabPages.Clear();
                 Tbc_Display.TabPages.Add(tab);
 
             }
@@ -56,7 +58,29 @@ namespace College
                 Tbc_Display.TabPages.Remove(tab);
             }
 
-            //Tbc_Display.TabPages.Add(tab);
+        }
+
+        private void Btn_ShowNotasDoBimestre_Click(object sender, EventArgs e)
+        {
+            Frm_Bimestre_UC u = new Frm_Bimestre_UC();
+            TabPage tab = new TabPage();
+
+            u.Dock = DockStyle.Fill;
+            tab.Name = "Bimestre";
+            tab.Text = "Bimestre1";
+            tab.Controls.Add(u);
+
+            if (Tbc_Display.TabCount <= 1)
+            {
+                Tbc_Display.TabPages.Clear();
+                Tbc_Display.TabPages.Add(tab);
+
+            }
+            else
+            {
+                Tbc_Display.TabPages.Remove(tab);
+            }
+
         }
     }
 }

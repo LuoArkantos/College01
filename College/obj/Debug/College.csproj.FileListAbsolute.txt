@@ -31,3 +31,4 @@ C:\Users\luizf\College01\College\obj\Debug\College.Frm_BuscarAluno.resources
 C:\Users\luizf\College01\College\obj\Debug\College.Frm_Login.resources
 C:\Users\luizf\College01\College\obj\Debug\College.Frm_Bimestre_UC.resources
 C:\Users\luizf\College01\College\obj\Debug\College.Frm_GerenciamentoDeNotas.resources
+C:\Users\luizf\College01\College\obj\Debug\College.Gerenciamento_de_Notas_UC.Frm_DadosDoAluno_UC.resources
