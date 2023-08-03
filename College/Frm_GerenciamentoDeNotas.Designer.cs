@@ -28,59 +28,105 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Tbc_Aplicacoes = new System.Windows.Forms.TabControl();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.bimestreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Btn_ShowDadosDoAluno = new System.Windows.Forms.Button();
+            this.Btn_ShowNotasDoBimestre = new System.Windows.Forms.Button();
+            this.Btn_ShowFrequenciaDoAluno = new System.Windows.Forms.Button();
+            this.Btn_ShowResumoDoAluno = new System.Windows.Forms.Button();
+            this.Lbl_NomeAluno = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Tbc_Aplicacoes
+            // panel1
             // 
-            this.Tbc_Aplicacoes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Tbc_Aplicacoes.Location = new System.Drawing.Point(0, 24);
-            this.Tbc_Aplicacoes.Name = "Tbc_Aplicacoes";
-            this.Tbc_Aplicacoes.SelectedIndex = 0;
-            this.Tbc_Aplicacoes.Size = new System.Drawing.Size(784, 437);
-            this.Tbc_Aplicacoes.TabIndex = 0;
+            this.panel1.Controls.Add(this.Lbl_NomeAluno);
+            this.panel1.Controls.Add(this.Btn_ShowResumoDoAluno);
+            this.panel1.Controls.Add(this.Btn_ShowFrequenciaDoAluno);
+            this.panel1.Controls.Add(this.Btn_ShowNotasDoBimestre);
+            this.panel1.Controls.Add(this.Btn_ShowDadosDoAluno);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(212, 461);
+            this.panel1.TabIndex = 2;
             // 
-            // menuStrip1
+            // tabControl1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bimestreToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(784, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.tabControl1.Location = new System.Drawing.Point(208, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(577, 460);
+            this.tabControl1.TabIndex = 4;
             // 
-            // bimestreToolStripMenuItem
+            // Btn_ShowDadosDoAluno
             // 
-            this.bimestreToolStripMenuItem.Name = "bimestreToolStripMenuItem";
-            this.bimestreToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.bimestreToolStripMenuItem.Text = "bimestre";
-            this.bimestreToolStripMenuItem.Click += new System.EventHandler(this.bimestreToolStripMenuItem_Click);
+            this.Btn_ShowDadosDoAluno.Location = new System.Drawing.Point(4, 132);
+            this.Btn_ShowDadosDoAluno.Name = "Btn_ShowDadosDoAluno";
+            this.Btn_ShowDadosDoAluno.Size = new System.Drawing.Size(202, 63);
+            this.Btn_ShowDadosDoAluno.TabIndex = 0;
+            this.Btn_ShowDadosDoAluno.Text = "Dados do Aluno";
+            this.Btn_ShowDadosDoAluno.UseVisualStyleBackColor = true;
+            // 
+            // Btn_ShowNotasDoBimestre
+            // 
+            this.Btn_ShowNotasDoBimestre.Location = new System.Drawing.Point(3, 201);
+            this.Btn_ShowNotasDoBimestre.Name = "Btn_ShowNotasDoBimestre";
+            this.Btn_ShowNotasDoBimestre.Size = new System.Drawing.Size(202, 63);
+            this.Btn_ShowNotasDoBimestre.TabIndex = 1;
+            this.Btn_ShowNotasDoBimestre.Text = "Notas do Bimestre";
+            this.Btn_ShowNotasDoBimestre.UseVisualStyleBackColor = true;
+            // 
+            // Btn_ShowFrequenciaDoAluno
+            // 
+            this.Btn_ShowFrequenciaDoAluno.Location = new System.Drawing.Point(3, 270);
+            this.Btn_ShowFrequenciaDoAluno.Name = "Btn_ShowFrequenciaDoAluno";
+            this.Btn_ShowFrequenciaDoAluno.Size = new System.Drawing.Size(202, 63);
+            this.Btn_ShowFrequenciaDoAluno.TabIndex = 2;
+            this.Btn_ShowFrequenciaDoAluno.Text = "Frequencia";
+            this.Btn_ShowFrequenciaDoAluno.UseVisualStyleBackColor = true;
+            // 
+            // Btn_ShowResumoDoAluno
+            // 
+            this.Btn_ShowResumoDoAluno.Location = new System.Drawing.Point(3, 339);
+            this.Btn_ShowResumoDoAluno.Name = "Btn_ShowResumoDoAluno";
+            this.Btn_ShowResumoDoAluno.Size = new System.Drawing.Size(202, 63);
+            this.Btn_ShowResumoDoAluno.TabIndex = 3;
+            this.Btn_ShowResumoDoAluno.Text = "Resumo do Aluno";
+            this.Btn_ShowResumoDoAluno.UseVisualStyleBackColor = true;
+            // 
+            // Lbl_NomeAluno
+            // 
+            this.Lbl_NomeAluno.AutoSize = true;
+            this.Lbl_NomeAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_NomeAluno.Location = new System.Drawing.Point(13, 37);
+            this.Lbl_NomeAluno.Name = "Lbl_NomeAluno";
+            this.Lbl_NomeAluno.Size = new System.Drawing.Size(162, 25);
+            this.Lbl_NomeAluno.TabIndex = 4;
+            this.Lbl_NomeAluno.Text = "Nome Do Aluno";
             // 
             // Frm_GerenciamentoDeNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
-            this.Controls.Add(this.Tbc_Aplicacoes);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.panel1);
+            this.IsMdiContainer = true;
             this.Name = "Frm_GerenciamentoDeNotas";
             this.Text = "Frm_GerenciamentoDeNotas";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl Tbc_Aplicacoes;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem bimestreToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label Lbl_NomeAluno;
+        private System.Windows.Forms.Button Btn_ShowResumoDoAluno;
+        private System.Windows.Forms.Button Btn_ShowFrequenciaDoAluno;
+        private System.Windows.Forms.Button Btn_ShowNotasDoBimestre;
+        private System.Windows.Forms.Button Btn_ShowDadosDoAluno;
+        private System.Windows.Forms.TabControl tabControl1;
     }
 }

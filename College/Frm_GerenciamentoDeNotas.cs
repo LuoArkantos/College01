@@ -30,5 +30,10 @@ namespace College
 
             Tbc_Aplicacoes.TabPages.Add(tab);
         }
+
+        private void Tbc_Aplicacoes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
