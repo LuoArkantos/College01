@@ -240,7 +240,7 @@
             this.Lbl_Contato2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Contato2.Location = new System.Drawing.Point(496, 188);
             this.Lbl_Contato2.Name = "Lbl_Contato2";
-            this.Lbl_Contato2.Size = new System.Drawing.Size(151, 28);
+            this.Lbl_Contato2.Size = new System.Drawing.Size(171, 28);
             this.Lbl_Contato2.TabIndex = 17;
             // 
             // Btn_EditarDados
@@ -263,6 +263,7 @@
             this.Btn_Cancelar.TabIndex = 19;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.UseVisualStyleBackColor = true;
+            this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // Btn_GerirNotas
             // 

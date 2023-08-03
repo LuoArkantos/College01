@@ -130,6 +130,11 @@ namespace College
         {
 
         }
+
+        private void Btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
 }
