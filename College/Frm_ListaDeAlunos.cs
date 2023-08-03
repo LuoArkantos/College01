@@ -21,33 +21,28 @@ namespace College
         }
         private void Frm_ListaDeTurmas_Load(object sender, EventArgs e)
         {
-            string localDoArquivo = "RelacaoDeAlunos.csv";
+            string localDoArquivo = "RelacaoDeAlunos.csv"; //endereço do arquivo de dados
 
-
-            if (File.Exists(localDoArquivo))
+            if (File.Exists(localDoArquivo)) 
             {
 
                 string[] linhas = File.ReadAllLines(localDoArquivo);
 
-                DataGridView dgv = new DataGridView();
-
-                dgv.Rows.Clear();
-                dgv.Columns.Clear();
-
-
-                string[] columnHeaders = linhas[0].Split(';');
+                string[] columnHeaders = linhas[0].Split(';'); //A PRIMEIRA LINHA VIRA O CABEÇALHO
 
 
                 foreach (string header in columnHeaders)
                 {
-                    dgv.Columns.Add(header, header);
+                    Dgv_Lista.Columns.Add(header, header);
+
                 }
 
 
                 for (int i = 1; i < linhas.Length; i++)
                 {
                     string[] values = linhas[i].Split(';');
-                    dgv.Rows.Add(values);
+                    Dgv_Lista.Rows.Add(values);
+
                 }
             }
             else
