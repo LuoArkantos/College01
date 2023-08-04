@@ -16,7 +16,18 @@ namespace Cls_Uteis
             Index = indice;
             return;
         }
+        public void CapturarIndex()
+        {
+            if (Index != 0 || Index != null)
+            {
+                Index = 15;
+                return;
+            }
+        }
+        public Cls_TrocaDeDados()
+        {
+            CapturarIndex(); 
 
-        
+        }
     }
 }

@@ -60,7 +60,8 @@ namespace College
             new Frm_ListaDeAlunos().Close();
 
             Cls_TrocaDeDados Tdd = new Cls_TrocaDeDados(indice);
-            //MessageBox.Show($"indice: {Tdd.Index}","indicce", MessageBoxButtons.OK); //Testar se pegava o index
+            Tdd.Index = indice;
+            MessageBox.Show($"indice: {Tdd.Index}","indicce", MessageBoxButtons.OK); //Testar se pegava o index
         }
     }
 }

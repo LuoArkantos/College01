@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Cls_Uteis;
 using College.Gerenciamento_de_Notas_UC;
 
 namespace College
@@ -17,7 +19,18 @@ namespace College
         {
             InitializeComponent();
         }
+        static int indice;
 
+        private int index = new Cls_TrocaDeDados(indice).Index;
+        public Frm_GerenciamentoDeNotas(int indice)
+        {
+            string localDoArquivo = "RelacaoDeAlunos.csv"; //endereço do arquivo de dados
+            string[] linhas = File.ReadAllLines(localDoArquivo);
+
+        }
+
+        public int alunoSelecionado { get; private set; }
+        
         private void Btn_ShowDadosDoAluno_Click(object sender, EventArgs e)
         {
             Frm_DadosDoAluno_UC u = new Frm_DadosDoAluno_UC();
@@ -33,7 +46,8 @@ namespace College
                 Tbc_Display.TabPages.Clear();
                 Btn_ShowDadosDoAluno.Enabled = false;
                 Tbc_Display.TabPages.Add(tab);
-
+                
+                MessageBox.Show($"Ate aqui deu: {index}", "Deu", MessageBoxButtons.OK);
             }
             else
             {
