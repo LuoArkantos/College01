@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Shapes;
 
@@ -52,19 +53,14 @@ namespace College
             }
         }
 
+        private void Btn_GerirNotas_Click(object sender, EventArgs e)
+        {
+            new Frm_GerenciamentoDeNotas().Show();
+            int indice = Dgv_Lista.CurrentRow.Index + 1;
+            new Frm_ListaDeAlunos().Close();
 
-        //private void Frm_ListaDeTurmas_Load(object sender, EventArgs e)
-        //{
-        //    DataGridView dgv = new DataGridView();
-        //    string localDoArquivo = "RelacaoDeAlunos.csv";
-
-        //    string[] linhas = File.ReadAllLines(localDoArquivo);
-
-        //    for (int i = 0; i < linhas.Length; i++)
-        //    {
-        //        dgv.Rows.Add(linhas[1]);
-        //    }
-        //}
+            Cls_TrocaDeDados Tdd = new Cls_TrocaDeDados(indice);
+            //MessageBox.Show($"indice: {Tdd.Index}","indicce", MessageBoxButtons.OK); //Testar se pegava o index
+        }
     }
-
 }

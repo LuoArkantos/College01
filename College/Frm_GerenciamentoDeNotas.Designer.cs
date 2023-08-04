@@ -115,6 +115,7 @@
             this.Controls.Add(this.panel1);
             this.IsMdiContainer = true;
             this.Name = "Frm_GerenciamentoDeNotas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_GerenciamentoDeNotas";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -46,6 +46,7 @@
             this.Dgv_Lista.AllowUserToDeleteRows = false;
             this.Dgv_Lista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_Lista.Location = new System.Drawing.Point(149, 2);
+            this.Dgv_Lista.MultiSelect = false;
             this.Dgv_Lista.Name = "Dgv_Lista";
             this.Dgv_Lista.ReadOnly = true;
             this.Dgv_Lista.Size = new System.Drawing.Size(809, 461);
@@ -74,6 +75,7 @@
             this.Btn_GerirNotas.TabIndex = 23;
             this.Btn_GerirNotas.Text = "Gerir Notas";
             this.Btn_GerirNotas.UseVisualStyleBackColor = true;
+            this.Btn_GerirNotas.Click += new System.EventHandler(this.Btn_GerirNotas_Click);
             // 
             // Btn_Cancelar
             // 
@@ -103,8 +105,10 @@
             this.ClientSize = new System.Drawing.Size(958, 461);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Dgv_Lista);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Frm_ListaDeAlunos";
-            this.Text = "Frm_ListaDeTurmas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Lista De Alunos";
             this.Load += new System.EventHandler(this.Frm_ListaDeTurmas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Lista)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clsAlunoBindingSource)).EndInit();
