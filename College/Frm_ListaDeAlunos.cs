@@ -52,18 +52,15 @@ namespace College
                 MessageBox.Show("File not found: " + localDoArquivo, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        public int Index { get; private set; }
-        
-
         private void Btn_GerirNotas_Click(object sender, EventArgs e)
         {
-            new Frm_GerenciamentoDeNotas().Show();
+            Frm_GerenciamentoDeNotas gerenciamento = new Frm_GerenciamentoDeNotas();
             int indice = Dgv_Lista.CurrentRow.Index + 1;
-            Index = indice;
-            MessageBox.Show($"indice: {Index}", "indicce", MessageBoxButtons.OK); //Testar se pegava o index
+            gerenciamento.GetIndex = indice;
 
-            new Frm_ListaDeAlunos().Close();
+            MessageBox.Show($"indice: {indice}", "indicce", MessageBoxButtons.OK); //Testar se pegava o index
+            gerenciamento.ShowDialog();
+            new Frm_ListaDeAlunos().Hide();
 
             //Cls_TrocaDeDados Tdd = new Cls_TrocaDeDados(indice);
             //Tdd.Index = indice;

@@ -20,7 +20,7 @@ namespace College
             InitializeComponent();
         }
         static int indice;
-
+        public int GetIndex { get; set; }
         public Frm_GerenciamentoDeNotas(int indice)
         {
             string localDoArquivo = "RelacaoDeAlunos.csv"; //endereço do arquivo de dados
@@ -80,10 +80,8 @@ namespace College
 
         private void Frm_GerenciamentoDeNotas_Load(object sender, EventArgs e)
         {
-            Frm_ListaDeAlunos lda = new Frm_ListaDeAlunos();
-            string indice = lda.Index.ToString();
-            MessageBox.Show($"Ate aqui deu: {indice}", "Deu", MessageBoxButtons.OK);
-
+            MessageBox.Show($"Indice Recebido: {GetIndex}", "Deu", MessageBoxButtons.OK);
+            Lbl_NomeAluno.Text = GetIndex.ToString();
         }
     }
 }
