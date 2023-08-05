@@ -291,6 +291,7 @@ namespace College
             this.Btn_GerirNotas.Size = new System.Drawing.Size(85, 85);
             this.Btn_GerirNotas.TabIndex = 2;
             this.Btn_GerirNotas.UseVisualStyleBackColor = false;
+            this.Btn_GerirNotas.Click += new System.EventHandler(this.Btn_GerirNotas_Click);
             // 
             // Btn_Buscar
             // 

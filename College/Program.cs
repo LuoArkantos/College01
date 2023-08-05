@@ -16,7 +16,7 @@ namespace College
         { 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_ListaDeAlunos());
+            Application.Run(new Frm_HomePage());
         }
     }
 }

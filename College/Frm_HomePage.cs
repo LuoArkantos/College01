@@ -122,5 +122,13 @@ namespace College
             Frm_Login l = new Frm_Login();
             l.ShowDialog();
         }
+
+        private void Btn_GerirNotas_Click(object sender, EventArgs e)
+        {
+            Frm_ListaDeAlunos l = new Frm_ListaDeAlunos();
+            this.Hide();
+            l.ShowDialog();
+            this.Show();            
+        }
     }
 }
