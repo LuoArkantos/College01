@@ -117,6 +117,7 @@
             this.Name = "Frm_GerenciamentoDeNotas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_GerenciamentoDeNotas";
+            this.Load += new System.EventHandler(this.Frm_GerenciamentoDeNotas_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

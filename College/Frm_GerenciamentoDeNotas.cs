@@ -21,7 +21,6 @@ namespace College
         }
         static int indice;
 
-        private int index = new Cls_TrocaDeDados(indice).Index;
         public Frm_GerenciamentoDeNotas(int indice)
         {
             string localDoArquivo = "RelacaoDeAlunos.csv"; //endereço do arquivo de dados
@@ -46,8 +45,8 @@ namespace College
                 Tbc_Display.TabPages.Clear();
                 Btn_ShowDadosDoAluno.Enabled = false;
                 Tbc_Display.TabPages.Add(tab);
-                
-                MessageBox.Show($"Ate aqui deu: {index}", "Deu", MessageBoxButtons.OK);
+
+
             }
             else
             {
@@ -76,6 +75,14 @@ namespace College
             {
                 Tbc_Display.TabPages.Remove(tab);
             }
+
+        }
+
+        private void Frm_GerenciamentoDeNotas_Load(object sender, EventArgs e)
+        {
+            Frm_ListaDeAlunos lda = new Frm_ListaDeAlunos();
+            string indice = lda.Index.ToString();
+            MessageBox.Show($"Ate aqui deu: {indice}", "Deu", MessageBoxButtons.OK);
 
         }
     }

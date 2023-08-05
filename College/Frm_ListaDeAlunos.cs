@@ -53,15 +53,20 @@ namespace College
             }
         }
 
+        public int Index { get; private set; }
+        
+
         private void Btn_GerirNotas_Click(object sender, EventArgs e)
         {
             new Frm_GerenciamentoDeNotas().Show();
             int indice = Dgv_Lista.CurrentRow.Index + 1;
+            Index = indice;
+            MessageBox.Show($"indice: {Index}", "indicce", MessageBoxButtons.OK); //Testar se pegava o index
+
             new Frm_ListaDeAlunos().Close();
 
-            Cls_TrocaDeDados Tdd = new Cls_TrocaDeDados(indice);
-            Tdd.Index = indice;
-            MessageBox.Show($"indice: {Tdd.Index}","indicce", MessageBoxButtons.OK); //Testar se pegava o index
+            //Cls_TrocaDeDados Tdd = new Cls_TrocaDeDados(indice);
+            //Tdd.Index = indice;
         }
     }
 }
