@@ -19,16 +19,7 @@ namespace College
         {
             InitializeComponent();
         }
-        static int indice;
         public int GetIndex { get; set; }
-        public Frm_GerenciamentoDeNotas(int indice)
-        {
-            string localDoArquivo = "RelacaoDeAlunos.csv"; //endereço do arquivo de dados
-            string[] linhas = File.ReadAllLines(localDoArquivo);
-
-        }
-
-        public int alunoSelecionado { get; private set; }
         
         private void Btn_ShowDadosDoAluno_Click(object sender, EventArgs e)
         {
@@ -45,8 +36,6 @@ namespace College
                 Tbc_Display.TabPages.Clear();
                 Btn_ShowDadosDoAluno.Enabled = false;
                 Tbc_Display.TabPages.Add(tab);
-
-
             }
             else
             {
@@ -80,8 +69,10 @@ namespace College
 
         private void Frm_GerenciamentoDeNotas_Load(object sender, EventArgs e)
         {
-            MessageBox.Show($"Indice Recebido: {GetIndex}", "Deu", MessageBoxButtons.OK);
-            Lbl_NomeAluno.Text = GetIndex.ToString();
-        }
+
+            string[] lista = File.ReadAllLines("RelacaoDeAlunos.csv");
+            string [] alunos = lista[GetIndex].Split(';');
+
+            Lbl_NomeAluno.Text = $"Aluno(a): {alunos[0]}";}
     }
 }

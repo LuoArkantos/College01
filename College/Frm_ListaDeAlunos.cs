@@ -1,4 +1,5 @@
 ﻿using Cls_Uteis;
+using College.Gerenciamento_de_Notas_UC;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -55,15 +56,14 @@ namespace College
         private void Btn_GerirNotas_Click(object sender, EventArgs e)
         {
             Frm_GerenciamentoDeNotas gerenciamento = new Frm_GerenciamentoDeNotas();
+            Frm_DadosDoAluno_UC d = new Frm_DadosDoAluno_UC();
             int indice = Dgv_Lista.CurrentRow.Index + 1;
             gerenciamento.GetIndex = indice;
-
+            d.GetIndex = indice;
             MessageBox.Show($"indice: {indice}", "indicce", MessageBoxButtons.OK); //Testar se pegava o index
+            this.Hide();
             gerenciamento.ShowDialog();
-            new Frm_ListaDeAlunos().Hide();
-
-            //Cls_TrocaDeDados Tdd = new Cls_TrocaDeDados(indice);
-            //Tdd.Index = indice;
+            this.Show();
         }
     }
 }
