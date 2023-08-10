@@ -43,20 +43,20 @@
             this.Rad_cad3 = new System.Windows.Forms.RadioButton();
             this.Rad_cad5 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.Msk_NotaTrab1 = new System.Windows.Forms.MaskedTextBox();
-            this.Msk_NotaTrab2 = new System.Windows.Forms.MaskedTextBox();
-            this.Lbl_Trab1 = new System.Windows.Forms.Label();
-            this.Lbl_Trab2 = new System.Windows.Forms.Label();
-            this.Lbl_TotalLiteralTrab = new System.Windows.Forms.Label();
-            this.Msk_TotalLiteralTrab = new System.Windows.Forms.MaskedTextBox();
             this.Msk_TotalLiteralAtv = new System.Windows.Forms.MaskedTextBox();
             this.Lbl_TotalLiteralAtv = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Msk_TotalLiteralTrab = new System.Windows.Forms.MaskedTextBox();
+            this.Lbl_TotalLiteralTrab = new System.Windows.Forms.Label();
+            this.Lbl_Trab2 = new System.Windows.Forms.Label();
+            this.Lbl_Trab1 = new System.Windows.Forms.Label();
+            this.Msk_NotaTrab2 = new System.Windows.Forms.MaskedTextBox();
+            this.Msk_NotaTrab1 = new System.Windows.Forms.MaskedTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.Msk_TotalLiteralProva = new System.Windows.Forms.MaskedTextBox();
-            this.Lbl_TotalLiteralProva = new System.Windows.Forms.Label();
             this.Lbl_NotaProva = new System.Windows.Forms.Label();
             this.Msk_NotaProva = new System.Windows.Forms.MaskedTextBox();
+            this.Msk_TotalLiteralProva = new System.Windows.Forms.MaskedTextBox();
+            this.Lbl_TotalLiteralProva = new System.Windows.Forms.Label();
             this.Btn_Salvar = new System.Windows.Forms.Button();
             this.Btn_Limpar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -224,6 +224,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.Msk_TotalLiteralAtv);
             this.panel1.Controls.Add(this.Lbl_NotasCaderno);
             this.panel1.Controls.Add(this.Lbl_TotalLiteralAtv);
@@ -239,76 +240,6 @@
             this.panel1.Size = new System.Drawing.Size(598, 91);
             this.panel1.TabIndex = 21;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.Msk_TotalLiteralTrab);
-            this.panel2.Controls.Add(this.Lbl_TotalLiteralTrab);
-            this.panel2.Controls.Add(this.Lbl_Trab2);
-            this.panel2.Controls.Add(this.Lbl_Trab1);
-            this.panel2.Controls.Add(this.Msk_NotaTrab2);
-            this.panel2.Controls.Add(this.Msk_NotaTrab1);
-            this.panel2.Controls.Add(this.Lbl_Trabalhos);
-            this.panel2.Controls.Add(this.Lbl_RegraTrabalhos);
-            this.panel2.Location = new System.Drawing.Point(112, 142);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(598, 91);
-            this.panel2.TabIndex = 22;
-            // 
-            // Msk_NotaTrab1
-            // 
-            this.Msk_NotaTrab1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Msk_NotaTrab1.Location = new System.Drawing.Point(329, 43);
-            this.Msk_NotaTrab1.Mask = "0,00";
-            this.Msk_NotaTrab1.Name = "Msk_NotaTrab1";
-            this.Msk_NotaTrab1.Size = new System.Drawing.Size(49, 29);
-            this.Msk_NotaTrab1.TabIndex = 8;
-            // 
-            // Msk_NotaTrab2
-            // 
-            this.Msk_NotaTrab2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Msk_NotaTrab2.Location = new System.Drawing.Point(420, 43);
-            this.Msk_NotaTrab2.Mask = "0,00";
-            this.Msk_NotaTrab2.Name = "Msk_NotaTrab2";
-            this.Msk_NotaTrab2.Size = new System.Drawing.Size(49, 29);
-            this.Msk_NotaTrab2.TabIndex = 9;
-            // 
-            // Lbl_Trab1
-            // 
-            this.Lbl_Trab1.AutoSize = true;
-            this.Lbl_Trab1.Location = new System.Drawing.Point(326, 18);
-            this.Lbl_Trab1.Name = "Lbl_Trab1";
-            this.Lbl_Trab1.Size = new System.Drawing.Size(62, 13);
-            this.Lbl_Trab1.TabIndex = 10;
-            this.Lbl_Trab1.Text = "1º Trabalho";
-            // 
-            // Lbl_Trab2
-            // 
-            this.Lbl_Trab2.AutoSize = true;
-            this.Lbl_Trab2.Location = new System.Drawing.Point(417, 18);
-            this.Lbl_Trab2.Name = "Lbl_Trab2";
-            this.Lbl_Trab2.Size = new System.Drawing.Size(62, 13);
-            this.Lbl_Trab2.TabIndex = 11;
-            this.Lbl_Trab2.Text = "2º Trabalho";
-            // 
-            // Lbl_TotalLiteralTrab
-            // 
-            this.Lbl_TotalLiteralTrab.AutoSize = true;
-            this.Lbl_TotalLiteralTrab.Location = new System.Drawing.Point(516, 18);
-            this.Lbl_TotalLiteralTrab.Name = "Lbl_TotalLiteralTrab";
-            this.Lbl_TotalLiteralTrab.Size = new System.Drawing.Size(62, 13);
-            this.Lbl_TotalLiteralTrab.TabIndex = 12;
-            this.Lbl_TotalLiteralTrab.Text = "Total Literal";
-            // 
-            // Msk_TotalLiteralTrab
-            // 
-            this.Msk_TotalLiteralTrab.Enabled = false;
-            this.Msk_TotalLiteralTrab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Msk_TotalLiteralTrab.Location = new System.Drawing.Point(519, 43);
-            this.Msk_TotalLiteralTrab.Mask = "0,00";
-            this.Msk_TotalLiteralTrab.Name = "Msk_TotalLiteralTrab";
-            this.Msk_TotalLiteralTrab.Size = new System.Drawing.Size(49, 29);
-            this.Msk_TotalLiteralTrab.TabIndex = 13;
             // 
             // Msk_TotalLiteralAtv
             // 
@@ -329,8 +260,80 @@
             this.Lbl_TotalLiteralAtv.TabIndex = 14;
             this.Lbl_TotalLiteralAtv.Text = "Total Literal";
             // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.Msk_TotalLiteralTrab);
+            this.panel2.Controls.Add(this.Lbl_TotalLiteralTrab);
+            this.panel2.Controls.Add(this.Lbl_Trab2);
+            this.panel2.Controls.Add(this.Lbl_Trab1);
+            this.panel2.Controls.Add(this.Msk_NotaTrab2);
+            this.panel2.Controls.Add(this.Msk_NotaTrab1);
+            this.panel2.Controls.Add(this.Lbl_Trabalhos);
+            this.panel2.Controls.Add(this.Lbl_RegraTrabalhos);
+            this.panel2.Location = new System.Drawing.Point(112, 142);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(598, 91);
+            this.panel2.TabIndex = 22;
+            // 
+            // Msk_TotalLiteralTrab
+            // 
+            this.Msk_TotalLiteralTrab.Enabled = false;
+            this.Msk_TotalLiteralTrab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_TotalLiteralTrab.Location = new System.Drawing.Point(519, 43);
+            this.Msk_TotalLiteralTrab.Mask = "00,00";
+            this.Msk_TotalLiteralTrab.Name = "Msk_TotalLiteralTrab";
+            this.Msk_TotalLiteralTrab.Size = new System.Drawing.Size(49, 29);
+            this.Msk_TotalLiteralTrab.TabIndex = 13;
+            // 
+            // Lbl_TotalLiteralTrab
+            // 
+            this.Lbl_TotalLiteralTrab.AutoSize = true;
+            this.Lbl_TotalLiteralTrab.Location = new System.Drawing.Point(516, 18);
+            this.Lbl_TotalLiteralTrab.Name = "Lbl_TotalLiteralTrab";
+            this.Lbl_TotalLiteralTrab.Size = new System.Drawing.Size(62, 13);
+            this.Lbl_TotalLiteralTrab.TabIndex = 12;
+            this.Lbl_TotalLiteralTrab.Text = "Total Literal";
+            // 
+            // Lbl_Trab2
+            // 
+            this.Lbl_Trab2.AutoSize = true;
+            this.Lbl_Trab2.Location = new System.Drawing.Point(417, 18);
+            this.Lbl_Trab2.Name = "Lbl_Trab2";
+            this.Lbl_Trab2.Size = new System.Drawing.Size(62, 13);
+            this.Lbl_Trab2.TabIndex = 11;
+            this.Lbl_Trab2.Text = "2º Trabalho";
+            // 
+            // Lbl_Trab1
+            // 
+            this.Lbl_Trab1.AutoSize = true;
+            this.Lbl_Trab1.Location = new System.Drawing.Point(326, 18);
+            this.Lbl_Trab1.Name = "Lbl_Trab1";
+            this.Lbl_Trab1.Size = new System.Drawing.Size(62, 13);
+            this.Lbl_Trab1.TabIndex = 10;
+            this.Lbl_Trab1.Text = "1º Trabalho";
+            // 
+            // Msk_NotaTrab2
+            // 
+            this.Msk_NotaTrab2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_NotaTrab2.Location = new System.Drawing.Point(420, 43);
+            this.Msk_NotaTrab2.Mask = "00,00";
+            this.Msk_NotaTrab2.Name = "Msk_NotaTrab2";
+            this.Msk_NotaTrab2.Size = new System.Drawing.Size(49, 29);
+            this.Msk_NotaTrab2.TabIndex = 9;
+            // 
+            // Msk_NotaTrab1
+            // 
+            this.Msk_NotaTrab1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_NotaTrab1.Location = new System.Drawing.Point(329, 43);
+            this.Msk_NotaTrab1.Mask = "00,00";
+            this.Msk_NotaTrab1.Name = "Msk_NotaTrab1";
+            this.Msk_NotaTrab1.Size = new System.Drawing.Size(49, 29);
+            this.Msk_NotaTrab1.TabIndex = 8;
+            // 
             // panel3
             // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.Lbl_NotaProva);
             this.panel3.Controls.Add(this.Msk_NotaProva);
             this.panel3.Controls.Add(this.Msk_TotalLiteralProva);
@@ -341,25 +344,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(598, 91);
             this.panel3.TabIndex = 23;
-            // 
-            // Msk_TotalLiteralProva
-            // 
-            this.Msk_TotalLiteralProva.Enabled = false;
-            this.Msk_TotalLiteralProva.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Msk_TotalLiteralProva.Location = new System.Drawing.Point(519, 40);
-            this.Msk_TotalLiteralProva.Mask = "0,00";
-            this.Msk_TotalLiteralProva.Name = "Msk_TotalLiteralProva";
-            this.Msk_TotalLiteralProva.Size = new System.Drawing.Size(49, 29);
-            this.Msk_TotalLiteralProva.TabIndex = 15;
-            // 
-            // Lbl_TotalLiteralProva
-            // 
-            this.Lbl_TotalLiteralProva.AutoSize = true;
-            this.Lbl_TotalLiteralProva.Location = new System.Drawing.Point(516, 15);
-            this.Lbl_TotalLiteralProva.Name = "Lbl_TotalLiteralProva";
-            this.Lbl_TotalLiteralProva.Size = new System.Drawing.Size(62, 13);
-            this.Lbl_TotalLiteralProva.TabIndex = 14;
-            this.Lbl_TotalLiteralProva.Text = "Total Literal";
             // 
             // Lbl_NotaProva
             // 
@@ -374,10 +358,29 @@
             // 
             this.Msk_NotaProva.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Msk_NotaProva.Location = new System.Drawing.Point(420, 40);
-            this.Msk_NotaProva.Mask = "0,00";
+            this.Msk_NotaProva.Mask = "00,00";
             this.Msk_NotaProva.Name = "Msk_NotaProva";
             this.Msk_NotaProva.Size = new System.Drawing.Size(49, 29);
             this.Msk_NotaProva.TabIndex = 14;
+            // 
+            // Msk_TotalLiteralProva
+            // 
+            this.Msk_TotalLiteralProva.Enabled = false;
+            this.Msk_TotalLiteralProva.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_TotalLiteralProva.Location = new System.Drawing.Point(519, 40);
+            this.Msk_TotalLiteralProva.Mask = "00,00";
+            this.Msk_TotalLiteralProva.Name = "Msk_TotalLiteralProva";
+            this.Msk_TotalLiteralProva.Size = new System.Drawing.Size(49, 29);
+            this.Msk_TotalLiteralProva.TabIndex = 15;
+            // 
+            // Lbl_TotalLiteralProva
+            // 
+            this.Lbl_TotalLiteralProva.AutoSize = true;
+            this.Lbl_TotalLiteralProva.Location = new System.Drawing.Point(516, 15);
+            this.Lbl_TotalLiteralProva.Name = "Lbl_TotalLiteralProva";
+            this.Lbl_TotalLiteralProva.Size = new System.Drawing.Size(62, 13);
+            this.Lbl_TotalLiteralProva.TabIndex = 14;
+            this.Lbl_TotalLiteralProva.Text = "Total Literal";
             // 
             // Btn_Salvar
             // 

@@ -73,6 +73,9 @@ namespace College
             string[] lista = File.ReadAllLines("RelacaoDeAlunos.csv");
             string [] alunos = lista[GetIndex].Split(';');
 
-            Lbl_NomeAluno.Text = $"Aluno(a): {alunos[0]}";}
+            Lbl_NomeAluno.Text = $"Aluno(a): {alunos[1]}";
+            Lbl_ShowID.Text = $"ID: {alunos[0]}";
+        }
+
     }
 }

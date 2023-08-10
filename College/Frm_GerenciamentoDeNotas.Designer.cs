@@ -35,11 +35,13 @@
             this.Btn_ShowNotasDoBimestre = new System.Windows.Forms.Button();
             this.Btn_ShowDadosDoAluno = new System.Windows.Forms.Button();
             this.Tbc_Display = new System.Windows.Forms.TabControl();
+            this.Lbl_ShowID = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.Lbl_ShowID);
             this.panel1.Controls.Add(this.Lbl_NomeAluno);
             this.panel1.Controls.Add(this.Btn_ShowResumoDoAluno);
             this.panel1.Controls.Add(this.Btn_ShowFrequenciaDoAluno);
@@ -52,13 +54,12 @@
             // 
             // Lbl_NomeAluno
             // 
-            this.Lbl_NomeAluno.AutoSize = true;
             this.Lbl_NomeAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_NomeAluno.Location = new System.Drawing.Point(13, 37);
+            this.Lbl_NomeAluno.Location = new System.Drawing.Point(4, 0);
             this.Lbl_NomeAluno.Name = "Lbl_NomeAluno";
-            this.Lbl_NomeAluno.Size = new System.Drawing.Size(162, 25);
+            this.Lbl_NomeAluno.Size = new System.Drawing.Size(202, 97);
             this.Lbl_NomeAluno.TabIndex = 4;
-            this.Lbl_NomeAluno.Text = "Nome Do Aluno";
+            this.Lbl_NomeAluno.Text = "Aluno(a):";
             // 
             // Btn_ShowResumoDoAluno
             // 
@@ -106,6 +107,15 @@
             this.Tbc_Display.Size = new System.Drawing.Size(751, 460);
             this.Tbc_Display.TabIndex = 4;
             // 
+            // Lbl_ShowID
+            // 
+            this.Lbl_ShowID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_ShowID.Location = new System.Drawing.Point(4, 101);
+            this.Lbl_ShowID.Name = "Lbl_ShowID";
+            this.Lbl_ShowID.Size = new System.Drawing.Size(202, 28);
+            this.Lbl_ShowID.TabIndex = 5;
+            this.Lbl_ShowID.Text = "ID: ";
+            // 
             // Frm_GerenciamentoDeNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -119,7 +129,6 @@
             this.Text = "Frm_GerenciamentoDeNotas";
             this.Load += new System.EventHandler(this.Frm_GerenciamentoDeNotas_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -132,5 +141,6 @@
         private System.Windows.Forms.Button Btn_ShowNotasDoBimestre;
         private System.Windows.Forms.Button Btn_ShowDadosDoAluno;
         private System.Windows.Forms.TabControl Tbc_Display;
+        private System.Windows.Forms.Label Lbl_ShowID;
     }
 }
