@@ -21,15 +21,21 @@ namespace College.Gerenciamento_de_Notas_UC
 
         private void Frm_DadosDoAluno_UC_Load(object sender, EventArgs e)
         {
-            Frm_GerenciamentoDeNotas gerenciamento = new Frm_GerenciamentoDeNotas();
             string[] lista = File.ReadAllLines("RelacaoDeAlunos.csv");
             MessageBox.Show($"Recebido: {GetIndex}","recebido",MessageBoxButtons.OK);
             string[] alunos = lista[GetIndex].Split(';');
 
             Lbl_Nome.Text = alunos[0];
-            Lbl_NomeDaMae.Text = alunos[1];
-            Lbl_NomeDoPai.Text = alunos[2];
-            Lbl_Nascimento.Text = alunos[3];
+            Lbl_ShowNomeDaMae.Text = alunos[1];
+            Lbl_ShowNomeDoPai.Text = alunos[2];
+            Msk_ShowNascimento.Text = alunos[3];
+            Msk_ShowContato1.Text = alunos[4];
+            Msk_ShowContato2.Text = alunos[5];
+            Lbl_ShowNomeDaRua.Text = alunos[6];
+            Lbl_ShowNumero.Text = alunos[7];
+            Msk_ShowCEP.Text = alunos[8];
+            Lbl_ShowBairro.Text = alunos[9];
+            Lbl_ShowCidade.Text = $"{alunos[10]}/{alunos[11]}";
         }
     }
 }

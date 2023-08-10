@@ -24,6 +24,7 @@ namespace College
         private void Btn_ShowDadosDoAluno_Click(object sender, EventArgs e)
         {
             Frm_DadosDoAluno_UC u = new Frm_DadosDoAluno_UC();
+            u.GetIndex = this.GetIndex;
             TabPage tab = new TabPage();
 
             u.Dock = DockStyle.Fill;
@@ -69,7 +70,6 @@ namespace College
 
         private void Frm_GerenciamentoDeNotas_Load(object sender, EventArgs e)
         {
-
             string[] lista = File.ReadAllLines("RelacaoDeAlunos.csv");
             string [] alunos = lista[GetIndex].Split(';');
 

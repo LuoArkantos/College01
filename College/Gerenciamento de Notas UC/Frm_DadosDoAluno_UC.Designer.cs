@@ -30,25 +30,25 @@
         {
             this.Lbl_Nome = new System.Windows.Forms.Label();
             this.Lbl_Filiacao = new System.Windows.Forms.Label();
-            this.Lbl_NomeDaMae = new System.Windows.Forms.Label();
-            this.Lbl_NomeDoPai = new System.Windows.Forms.Label();
+            this.Lbl_ShowNomeDaMae = new System.Windows.Forms.Label();
+            this.Lbl_ShowNomeDoPai = new System.Windows.Forms.Label();
             this.Lbl_Contato = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.Lbl_NomeDoAluno = new System.Windows.Forms.Label();
+            this.Msk_ShowContato1 = new System.Windows.Forms.MaskedTextBox();
+            this.Msk_ShowContato2 = new System.Windows.Forms.MaskedTextBox();
+            this.Lbl_ShowNome = new System.Windows.Forms.Label();
             this.Lbl_Nascimento = new System.Windows.Forms.Label();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.Msk_ShowNascimento = new System.Windows.Forms.MaskedTextBox();
             this.Lbl_Endereco = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Lbl_UF = new System.Windows.Forms.Label();
-            this.Lbl_NomeDaCidade = new System.Windows.Forms.Label();
+            this.Lbl_ShowCidade = new System.Windows.Forms.Label();
             this.Lbl_Cidade = new System.Windows.Forms.Label();
-            this.Lbl_NomeDoBairro = new System.Windows.Forms.Label();
+            this.Lbl_ShowBairro = new System.Windows.Forms.Label();
             this.Lbl_Bairro = new System.Windows.Forms.Label();
-            this.Lbl_NomeDaRua = new System.Windows.Forms.Label();
-            this.Lbl_Numero = new System.Windows.Forms.Label();
+            this.Lbl_ShowNomeDaRua = new System.Windows.Forms.Label();
+            this.Lbl_ShowNumero = new System.Windows.Forms.Label();
             this.Lbl_NumeroCasa = new System.Windows.Forms.Label();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.Msk_ShowCEP = new System.Windows.Forms.MaskedTextBox();
             this.Lbl_CEP = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -74,23 +74,23 @@
             this.Lbl_Filiacao.TabIndex = 1;
             this.Lbl_Filiacao.Text = "Filiação:";
             // 
-            // Lbl_NomeDaMae
+            // Lbl_ShowNomeDaMae
             // 
-            this.Lbl_NomeDaMae.AutoSize = true;
-            this.Lbl_NomeDaMae.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_NomeDaMae.Location = new System.Drawing.Point(129, 88);
-            this.Lbl_NomeDaMae.Name = "Lbl_NomeDaMae";
-            this.Lbl_NomeDaMae.Size = new System.Drawing.Size(0, 25);
-            this.Lbl_NomeDaMae.TabIndex = 2;
+            this.Lbl_ShowNomeDaMae.AutoSize = true;
+            this.Lbl_ShowNomeDaMae.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_ShowNomeDaMae.Location = new System.Drawing.Point(129, 88);
+            this.Lbl_ShowNomeDaMae.Name = "Lbl_ShowNomeDaMae";
+            this.Lbl_ShowNomeDaMae.Size = new System.Drawing.Size(0, 25);
+            this.Lbl_ShowNomeDaMae.TabIndex = 2;
             // 
-            // Lbl_NomeDoPai
+            // Lbl_ShowNomeDoPai
             // 
-            this.Lbl_NomeDoPai.AutoSize = true;
-            this.Lbl_NomeDoPai.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_NomeDoPai.Location = new System.Drawing.Point(129, 113);
-            this.Lbl_NomeDoPai.Name = "Lbl_NomeDoPai";
-            this.Lbl_NomeDoPai.Size = new System.Drawing.Size(0, 25);
-            this.Lbl_NomeDoPai.TabIndex = 3;
+            this.Lbl_ShowNomeDoPai.AutoSize = true;
+            this.Lbl_ShowNomeDoPai.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_ShowNomeDoPai.Location = new System.Drawing.Point(129, 113);
+            this.Lbl_ShowNomeDoPai.Name = "Lbl_ShowNomeDoPai";
+            this.Lbl_ShowNomeDoPai.Size = new System.Drawing.Size(0, 25);
+            this.Lbl_ShowNomeDoPai.TabIndex = 3;
             // 
             // Lbl_Contato
             // 
@@ -102,34 +102,34 @@
             this.Lbl_Contato.TabIndex = 4;
             this.Lbl_Contato.Text = "Contato:";
             // 
-            // maskedTextBox1
+            // Msk_ShowContato1
             // 
-            this.maskedTextBox1.Enabled = false;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(129, 151);
-            this.maskedTextBox1.Mask = "(00) 0 0000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(149, 26);
-            this.maskedTextBox1.TabIndex = 5;
+            this.Msk_ShowContato1.Enabled = false;
+            this.Msk_ShowContato1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_ShowContato1.Location = new System.Drawing.Point(129, 151);
+            this.Msk_ShowContato1.Mask = "(00) 0 0000-0000";
+            this.Msk_ShowContato1.Name = "Msk_ShowContato1";
+            this.Msk_ShowContato1.Size = new System.Drawing.Size(149, 26);
+            this.Msk_ShowContato1.TabIndex = 5;
             // 
-            // maskedTextBox2
+            // Msk_ShowContato2
             // 
-            this.maskedTextBox2.Enabled = false;
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(284, 151);
-            this.maskedTextBox2.Mask = "(00) 0 0000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(149, 26);
-            this.maskedTextBox2.TabIndex = 6;
+            this.Msk_ShowContato2.Enabled = false;
+            this.Msk_ShowContato2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_ShowContato2.Location = new System.Drawing.Point(284, 151);
+            this.Msk_ShowContato2.Mask = "(00) 0 0000-0000";
+            this.Msk_ShowContato2.Name = "Msk_ShowContato2";
+            this.Msk_ShowContato2.Size = new System.Drawing.Size(149, 26);
+            this.Msk_ShowContato2.TabIndex = 6;
             // 
-            // Lbl_NomeDoAluno
+            // Lbl_ShowNome
             // 
-            this.Lbl_NomeDoAluno.AutoSize = true;
-            this.Lbl_NomeDoAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_NomeDoAluno.Location = new System.Drawing.Point(129, 50);
-            this.Lbl_NomeDoAluno.Name = "Lbl_NomeDoAluno";
-            this.Lbl_NomeDoAluno.Size = new System.Drawing.Size(0, 25);
-            this.Lbl_NomeDoAluno.TabIndex = 7;
+            this.Lbl_ShowNome.AutoSize = true;
+            this.Lbl_ShowNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_ShowNome.Location = new System.Drawing.Point(129, 50);
+            this.Lbl_ShowNome.Name = "Lbl_ShowNome";
+            this.Lbl_ShowNome.Size = new System.Drawing.Size(0, 25);
+            this.Lbl_ShowNome.TabIndex = 7;
             // 
             // Lbl_Nascimento
             // 
@@ -141,16 +141,16 @@
             this.Lbl_Nascimento.TabIndex = 8;
             this.Lbl_Nascimento.Text = "Nascimento";
             // 
-            // maskedTextBox3
+            // Msk_ShowNascimento
             // 
-            this.maskedTextBox3.Enabled = false;
-            this.maskedTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox3.Location = new System.Drawing.Point(633, 51);
-            this.maskedTextBox3.Mask = "00/00/0000";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(94, 26);
-            this.maskedTextBox3.TabIndex = 9;
-            this.maskedTextBox3.ValidatingType = typeof(System.DateTime);
+            this.Msk_ShowNascimento.Enabled = false;
+            this.Msk_ShowNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_ShowNascimento.Location = new System.Drawing.Point(633, 51);
+            this.Msk_ShowNascimento.Mask = "00/00/0000";
+            this.Msk_ShowNascimento.Name = "Msk_ShowNascimento";
+            this.Msk_ShowNascimento.Size = new System.Drawing.Size(94, 26);
+            this.Msk_ShowNascimento.TabIndex = 9;
+            this.Msk_ShowNascimento.ValidatingType = typeof(System.DateTime);
             // 
             // Lbl_Endereco
             // 
@@ -165,14 +165,14 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.Lbl_UF);
-            this.panel1.Controls.Add(this.Lbl_NomeDaCidade);
+            this.panel1.Controls.Add(this.Lbl_ShowCidade);
             this.panel1.Controls.Add(this.Lbl_Cidade);
-            this.panel1.Controls.Add(this.Lbl_NomeDoBairro);
+            this.panel1.Controls.Add(this.Lbl_ShowBairro);
             this.panel1.Controls.Add(this.Lbl_Bairro);
-            this.panel1.Controls.Add(this.Lbl_NomeDaRua);
-            this.panel1.Controls.Add(this.Lbl_Numero);
+            this.panel1.Controls.Add(this.Lbl_ShowNomeDaRua);
+            this.panel1.Controls.Add(this.Lbl_ShowNumero);
             this.panel1.Controls.Add(this.Lbl_NumeroCasa);
-            this.panel1.Controls.Add(this.maskedTextBox4);
+            this.panel1.Controls.Add(this.Msk_ShowCEP);
             this.panel1.Controls.Add(this.Lbl_CEP);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.Lbl_Endereco);
@@ -190,33 +190,33 @@
             this.Lbl_UF.Size = new System.Drawing.Size(0, 25);
             this.Lbl_UF.TabIndex = 20;
             // 
-            // Lbl_NomeDaCidade
+            // Lbl_ShowCidade
             // 
-            this.Lbl_NomeDaCidade.AutoSize = true;
-            this.Lbl_NomeDaCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_NomeDaCidade.Location = new System.Drawing.Point(467, 79);
-            this.Lbl_NomeDaCidade.Name = "Lbl_NomeDaCidade";
-            this.Lbl_NomeDaCidade.Size = new System.Drawing.Size(0, 25);
-            this.Lbl_NomeDaCidade.TabIndex = 19;
+            this.Lbl_ShowCidade.AutoSize = true;
+            this.Lbl_ShowCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_ShowCidade.Location = new System.Drawing.Point(467, 79);
+            this.Lbl_ShowCidade.Name = "Lbl_ShowCidade";
+            this.Lbl_ShowCidade.Size = new System.Drawing.Size(0, 25);
+            this.Lbl_ShowCidade.TabIndex = 19;
             // 
             // Lbl_Cidade
             // 
             this.Lbl_Cidade.AutoSize = true;
             this.Lbl_Cidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Cidade.Location = new System.Drawing.Point(383, 79);
+            this.Lbl_Cidade.Location = new System.Drawing.Point(364, 79);
             this.Lbl_Cidade.Name = "Lbl_Cidade";
             this.Lbl_Cidade.Size = new System.Drawing.Size(86, 25);
             this.Lbl_Cidade.TabIndex = 18;
             this.Lbl_Cidade.Text = "Cidade:";
             // 
-            // Lbl_NomeDoBairro
+            // Lbl_ShowBairro
             // 
-            this.Lbl_NomeDoBairro.AutoSize = true;
-            this.Lbl_NomeDoBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_NomeDoBairro.Location = new System.Drawing.Point(84, 79);
-            this.Lbl_NomeDoBairro.Name = "Lbl_NomeDoBairro";
-            this.Lbl_NomeDoBairro.Size = new System.Drawing.Size(0, 25);
-            this.Lbl_NomeDoBairro.TabIndex = 17;
+            this.Lbl_ShowBairro.AutoSize = true;
+            this.Lbl_ShowBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_ShowBairro.Location = new System.Drawing.Point(84, 79);
+            this.Lbl_ShowBairro.Name = "Lbl_ShowBairro";
+            this.Lbl_ShowBairro.Size = new System.Drawing.Size(0, 25);
+            this.Lbl_ShowBairro.TabIndex = 17;
             // 
             // Lbl_Bairro
             // 
@@ -228,43 +228,43 @@
             this.Lbl_Bairro.TabIndex = 16;
             this.Lbl_Bairro.Text = "Bairro:";
             // 
-            // Lbl_NomeDaRua
+            // Lbl_ShowNomeDaRua
             // 
-            this.Lbl_NomeDaRua.AutoSize = true;
-            this.Lbl_NomeDaRua.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_NomeDaRua.Location = new System.Drawing.Point(78, 43);
-            this.Lbl_NomeDaRua.Name = "Lbl_NomeDaRua";
-            this.Lbl_NomeDaRua.Size = new System.Drawing.Size(0, 25);
-            this.Lbl_NomeDaRua.TabIndex = 15;
+            this.Lbl_ShowNomeDaRua.AutoSize = true;
+            this.Lbl_ShowNomeDaRua.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_ShowNomeDaRua.Location = new System.Drawing.Point(78, 43);
+            this.Lbl_ShowNomeDaRua.Name = "Lbl_ShowNomeDaRua";
+            this.Lbl_ShowNomeDaRua.Size = new System.Drawing.Size(0, 25);
+            this.Lbl_ShowNomeDaRua.TabIndex = 15;
             // 
-            // Lbl_Numero
+            // Lbl_ShowNumero
             // 
-            this.Lbl_Numero.AutoSize = true;
-            this.Lbl_Numero.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Numero.Location = new System.Drawing.Point(467, 45);
-            this.Lbl_Numero.Name = "Lbl_Numero";
-            this.Lbl_Numero.Size = new System.Drawing.Size(0, 25);
-            this.Lbl_Numero.TabIndex = 14;
+            this.Lbl_ShowNumero.AutoSize = true;
+            this.Lbl_ShowNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_ShowNumero.Location = new System.Drawing.Point(467, 45);
+            this.Lbl_ShowNumero.Name = "Lbl_ShowNumero";
+            this.Lbl_ShowNumero.Size = new System.Drawing.Size(0, 25);
+            this.Lbl_ShowNumero.TabIndex = 14;
             // 
             // Lbl_NumeroCasa
             // 
             this.Lbl_NumeroCasa.AutoSize = true;
             this.Lbl_NumeroCasa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_NumeroCasa.Location = new System.Drawing.Point(434, 45);
+            this.Lbl_NumeroCasa.Location = new System.Drawing.Point(406, 44);
             this.Lbl_NumeroCasa.Name = "Lbl_NumeroCasa";
             this.Lbl_NumeroCasa.Size = new System.Drawing.Size(35, 25);
             this.Lbl_NumeroCasa.TabIndex = 13;
             this.Lbl_NumeroCasa.Text = "Nº";
             // 
-            // maskedTextBox4
+            // Msk_ShowCEP
             // 
-            this.maskedTextBox4.Enabled = false;
-            this.maskedTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox4.Location = new System.Drawing.Point(598, 44);
-            this.maskedTextBox4.Mask = "00000-000";
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(94, 26);
-            this.maskedTextBox4.TabIndex = 12;
+            this.Msk_ShowCEP.Enabled = false;
+            this.Msk_ShowCEP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msk_ShowCEP.Location = new System.Drawing.Point(598, 44);
+            this.Msk_ShowCEP.Mask = "00000-000";
+            this.Msk_ShowCEP.Name = "Msk_ShowCEP";
+            this.Msk_ShowCEP.Size = new System.Drawing.Size(94, 26);
+            this.Msk_ShowCEP.TabIndex = 12;
             // 
             // Lbl_CEP
             // 
@@ -291,14 +291,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.maskedTextBox3);
+            this.Controls.Add(this.Msk_ShowNascimento);
             this.Controls.Add(this.Lbl_Nascimento);
-            this.Controls.Add(this.Lbl_NomeDoAluno);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.Lbl_ShowNome);
+            this.Controls.Add(this.Msk_ShowContato2);
+            this.Controls.Add(this.Msk_ShowContato1);
             this.Controls.Add(this.Lbl_Contato);
-            this.Controls.Add(this.Lbl_NomeDoPai);
-            this.Controls.Add(this.Lbl_NomeDaMae);
+            this.Controls.Add(this.Lbl_ShowNomeDoPai);
+            this.Controls.Add(this.Lbl_ShowNomeDaMae);
             this.Controls.Add(this.Lbl_Filiacao);
             this.Controls.Add(this.Lbl_Nome);
             this.Name = "Frm_DadosDoAluno_UC";
@@ -315,25 +315,25 @@
 
         private System.Windows.Forms.Label Lbl_Nome;
         private System.Windows.Forms.Label Lbl_Filiacao;
-        private System.Windows.Forms.Label Lbl_NomeDaMae;
-        private System.Windows.Forms.Label Lbl_NomeDoPai;
+        private System.Windows.Forms.Label Lbl_ShowNomeDaMae;
+        private System.Windows.Forms.Label Lbl_ShowNomeDoPai;
         private System.Windows.Forms.Label Lbl_Contato;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.Label Lbl_NomeDoAluno;
+        private System.Windows.Forms.MaskedTextBox Msk_ShowContato1;
+        private System.Windows.Forms.MaskedTextBox Msk_ShowContato2;
+        private System.Windows.Forms.Label Lbl_ShowNome;
         private System.Windows.Forms.Label Lbl_Nascimento;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.MaskedTextBox Msk_ShowNascimento;
         private System.Windows.Forms.Label Lbl_Endereco;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Lbl_UF;
-        private System.Windows.Forms.Label Lbl_NomeDaCidade;
+        private System.Windows.Forms.Label Lbl_ShowCidade;
         private System.Windows.Forms.Label Lbl_Cidade;
-        private System.Windows.Forms.Label Lbl_NomeDoBairro;
+        private System.Windows.Forms.Label Lbl_ShowBairro;
         private System.Windows.Forms.Label Lbl_Bairro;
-        private System.Windows.Forms.Label Lbl_NomeDaRua;
-        private System.Windows.Forms.Label Lbl_Numero;
+        private System.Windows.Forms.Label Lbl_ShowNomeDaRua;
+        private System.Windows.Forms.Label Lbl_ShowNumero;
         private System.Windows.Forms.Label Lbl_NumeroCasa;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        private System.Windows.Forms.MaskedTextBox Msk_ShowCEP;
         private System.Windows.Forms.Label Lbl_CEP;
         private System.Windows.Forms.Label label2;
     }

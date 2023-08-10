@@ -60,6 +60,7 @@ namespace College
             int indice = Dgv_Lista.CurrentRow.Index + 1;
             gerenciamento.GetIndex = indice;
             d.GetIndex = indice;
+
             MessageBox.Show($"indice: {indice}", "indicce", MessageBoxButtons.OK); //Testar se pegava o index
             this.Hide();
             gerenciamento.ShowDialog();
