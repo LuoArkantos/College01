@@ -22,9 +22,10 @@ namespace College.Gerenciamento_de_Notas_UC
         private void Frm_DadosDoAluno_UC_Load(object sender, EventArgs e)
         {
             string[] lista = File.ReadAllLines("RelacaoDeAlunos.csv");
-            MessageBox.Show($"Recebido: {GetIndex}","recebido",MessageBoxButtons.OK);
+            
             string[] alunos = lista[GetIndex].Split(';');
 
+            //Exibindo dados
             Lbl_Nome.Text = alunos[0];
             Lbl_ShowNomeDaMae.Text = alunos[1];
             Lbl_ShowNomeDoPai.Text = alunos[2];

@@ -14,6 +14,7 @@ namespace Cls_Uteis
 {
     public class Cls_Aluno
     {
+        public int ID { get; private set; }
         public string Nome { get; set; }
         public string NomeMae { get; set; }
         public string NomePai { get; set; }
@@ -29,17 +30,8 @@ namespace Cls_Uteis
 
         public Cls_Aluno()
         {
-            //Nome = nome;
-            //NomeMae = nomeMae;
-            //NomePai = nomePai;
-            //Nascimento = nascimento;
-            //Telefone1 = telefone1;
-            //Telefone2 = telefone2;
-            //Endereco = endereco;
- 
-    }
         
-
+        }
         
         public static void CadastrarAluno(string nome, string nomeMae, string nomePai, string nascimento, string telefone1, string telefone2, string rua, string numero, string cep, string bairro, string cidade, string uf)
 
@@ -64,7 +56,7 @@ namespace Cls_Uteis
                 aluno.Cidade = cidade;
                 aluno.Uf = uf;
 
-                var dadosAluno = $"\n{nome};{nomeMae};{nomePai};{nascimento};{telefone1};{telefone2};{rua};{numero};{cep};{bairro};{cidade};{uf}";//Dado q vai ser colocado no documento
+                var dadosAluno = $"\n;{nome};{nomeMae};{nomePai};{nascimento};{telefone1};{telefone2};{rua};{numero};{cep};{bairro};{cidade};{uf}";//Dado q vai ser colocado no documento
 
                 var encoding = Encoding.UTF8; //cria encoding pra converter os bytes
 
@@ -74,7 +66,7 @@ namespace Cls_Uteis
             }
 
         }
-        public static void MostrarAluno()
+        public static void GerarId()
         {
             
         }
@@ -126,14 +118,16 @@ namespace Cls_Uteis
                 var linha = lista.ReadLine();
                 var campos = linha.Split(';');
 
-                var nome = campos[0];
-                var nomeMae = campos[1];
-                var nomePai = campos[2];
-                var nascimento = campos[3];
-                var contato1 = campos[4];
-                var contato2 = campos[5];
-                var endereco = campos[6];
+                var id = campos[0];
+                var nome = campos[1];
+                var nomeMae = campos[2];
+                var nomePai = campos[3];
+                var nascimento = campos[4];
+                var contato1 = campos[5];
+                var contato2 = campos[6];
+                var endereco = campos[7];
 
+                array.Add(id);
                 array.Add(nome);
                 array.Add(nomeMae);
                 array.Add(nomePai);
