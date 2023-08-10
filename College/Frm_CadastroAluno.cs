@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace College
         {
             InitializeComponent();
         }
+        string id;
         string nome;
         string nomeMae;
         string nomePai;
@@ -50,9 +52,27 @@ namespace College
 
             if ((nome != "") && (nomeMae != "") && (nascimento != "") && (telefone1 != "") && (rua != "") && (bairro != "") && (cidade != ""))
             {
-                Cls_Aluno.CadastrarAluno(nome, nomeMae, nomePai, nascimento, telefone1, telefone2, rua, numero, cep, bairro, cidade, uf);
+                string id = Cls_Aluno.GerarId();
 
-                if (MessageBox.Show($"Aluno {nome} cadastrado ! :)", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+                //Verifica se não repete id
+                var caminhoDoArquivo = "RelacaoDeAlunos.csv";
+                string[] lista = File.ReadAllLines(caminhoDoArquivo);
+
+                for (int i = 0; i < lista.Length; i++)
+                {
+                    string[] linhas = lista[i].Split(';');
+
+                    if (linhas[0].Equals(id))
+                    {
+                        id = Cls_Aluno.GerarId();
+                    }
+                    
+                }
+
+                    Cls_Aluno.CadastrarAluno(id.ToString(), nome, nomeMae, nomePai, nascimento, telefone1, telefone2, rua, numero, cep, bairro, cidade, uf);
+
+
+                if (MessageBox.Show($"Aluno {nome} cadastrado ! :) ID: {id}", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
                 {
                     this.Close();
                 }

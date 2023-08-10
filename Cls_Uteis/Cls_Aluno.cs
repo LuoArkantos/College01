@@ -14,7 +14,7 @@ namespace Cls_Uteis
 {
     public class Cls_Aluno
     {
-        public int ID { get; private set; }
+        public string ID { get; private set; }
         public string Nome { get; set; }
         public string NomeMae { get; set; }
         public string NomePai { get; set; }
@@ -33,7 +33,7 @@ namespace Cls_Uteis
         
         }
         
-        public static void CadastrarAluno(string nome, string nomeMae, string nomePai, string nascimento, string telefone1, string telefone2, string rua, string numero, string cep, string bairro, string cidade, string uf)
+        public static void CadastrarAluno(string id, string nome, string nomeMae, string nomePai, string nascimento, string telefone1, string telefone2, string rua, string numero, string cep, string bairro, string cidade, string uf)
 
         {
             
@@ -43,12 +43,16 @@ namespace Cls_Uteis
             using (var fluxoDeArquivo = new FileStream(caminhoDoArquivo, FileMode.Append))
             {
                 Cls_Aluno aluno = new Cls_Aluno();
+
+                aluno.ID = id;
+
                 aluno.Nome=nome;
                 aluno.NomeMae = nomeMae;
                 aluno.NomePai = nomePai;
                 aluno.Nascimento = nascimento;
                 aluno.Telefone1 = telefone1;
                 aluno.Telefone2 = telefone2;
+
                 aluno.Rua = rua;
                 aluno.Numero = numero;
                 aluno.Cep = cep;
@@ -56,7 +60,7 @@ namespace Cls_Uteis
                 aluno.Cidade = cidade;
                 aluno.Uf = uf;
 
-                var dadosAluno = $"\n;{nome};{nomeMae};{nomePai};{nascimento};{telefone1};{telefone2};{rua};{numero};{cep};{bairro};{cidade};{uf}";//Dado q vai ser colocado no documento
+                var dadosAluno = $"\n{id};{nome};{nomeMae};{nomePai};{nascimento};{telefone1};{telefone2};{rua};{numero};{cep};{bairro};{cidade};{uf}";//Dado q vai ser colocado no documento
 
                 var encoding = Encoding.UTF8; //cria encoding pra converter os bytes
 
@@ -66,10 +70,15 @@ namespace Cls_Uteis
             }
 
         }
-        public static void GerarId()
+
+        public static string GerarId()
         {
-            
+            Random randNum = new Random();
+
+            int id = randNum.Next(100000, 999999);
+            return id.ToString();
         }
+
         public static void EncontrarAluno(string nomeBusca)
         {
             string localDoArquivo = "RelacaoDeAlunos.csv";
@@ -103,6 +112,7 @@ namespace Cls_Uteis
                 }
             }
         }
+
         public static bool BuscarAluno(string busca)
         {
             var caminhoDoArquivo = "RelacaoDeAlunos.csv"; //diretório para onde vai exportar os dados

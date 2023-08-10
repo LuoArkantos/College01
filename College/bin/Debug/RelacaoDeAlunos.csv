@@ -1,41 +1,45 @@
-NOME DO ALUNO;NOME DA MÃE;NOME DO PAI;D. NASCIMENTO;CONTATO;CONTATO2;RUA;NUMERO;CEP;BAIRRO;CIDADE;UF
-João da Silva;MariadaSilva;JosédaSilva;15/02/1985;(11)99999-1111;(11)99999-2222;RuadosLimões;31;12345-000;Limoeiro;SãoPaulo;SP
-Ana Santos;Laura Santos;Pedro Santos;03/07/1990;(21)98888-1111;(21)98888-2222;RuadasFlores;45;54321-000;JardimdasFlores;RiodeJaneiro;RJ
-Carlos Pereira;Fernanda Pereira;Ricardo Pereira;22/11/1982;(31)97777-1111;(31)97777-2222;AvenidaPrincipal;101;67890-123;Centro;BeloHorizonte;MG
-Mariana Ferreira;Beatriz Ferreira;Daniel Ferreira;09/04/1995;(41)96666-1111;(41)96666-2222;TravessadasÁrvores;20;45678-000;BosqueVerde;Curitiba;PR
-Lucas Oliveira;Sandra Oliveira;Marcelo Oliveira;27/06/1988;(51)95555-1111;(51)95555-2222;AlamedadosPássaros;85;89012-345;JardimdasAves;PortoAlegre;RS
-Camila Rodrigues;Juliana Rodrigues;André Rodrigues;14/09/1992;(85)94444-1111;(85)94444-2222;PraçadasPalmeiras;10;67890-123;Centro;Fortaleza;CE
-Rafael Almeida;Paula Almeida;Gustavo Almeida;02/03/1980;(61)93333-1111;(61)93333-2222;RuadasMontanhas;75;23456-789;ValedasPedras;Brasília;DF
-Letícia Martins;Helena Martins;Tiago Martins;11/12/1998;(62)92222-1111;(62)92222-2222;AvenidadasEstrelas;50;34567-890;EstreladoSul;Goiânia;GO
-Gustavo Costa;Lúcia Costa;Alexandre Costa;05/10/1987;(27)91111-1111;(27)91111-2222;RuadasOndas;80;12345-678;PraiaAzul;Vitória;ES
-Isabela Fernandes;Letícia Fernandes;Márcio Fernandes;17/11/1993;(31)98888-1111;(31)98888-2222;AvenidadosVentos;29;89012-345;ViladoVento;BeloHorizonte;MG
-Marcelo Lima;Carla Lima;João Lima;30/05/1984;(21)97777-1111;(21)97777-2222;RuadasPedras;92;45678-000;PedraBranca;RiodeJaneiro;RJ
-Larissa Barbosa;Maria Barbosa;Paulo Barbosa;12/08/1997;(51)96666-1111;(51)96666-2222;TravessadasFlores;70;98765-432;FloresdoCampo;PortoAlegre;RS
-Thiago Pereira;Márcia Pereira;Felipe Pereira;25/01/1991;(81)95555-1111;(81)95555-2222;AlamedadosCoqueiros;15;23456-789;JardimdosCoqueiros;Recife;PE
-Amanda Silva;Letícia Silva;Ricardo Silva;08/06/1996;(11)94444-1111;(11)94444-2222;PraçadasÁguas;5;67890-123;Centro;SãoPaulo;SP
-Eduardo Sousa;Juliana Sousa;Antonio Sousa;19/03/1989;(31)92222-1111;(31)92222-2222;AvenidadasAndorinhas;25;56789-012;JardimdasAndorinhas;BeloHorizonte;MG
-Beatriz Santos;Carla Santos;Lucas Santos;02/09/1994;(21)91111-1111;(21)91111-2222;RuadasFlores;15;89012-345;ViladasFlores;RiodeJaneiro;RJ
-Rodrigo Oliveira;Mariana Oliveira;André Oliveira;10/11/1983;(71)93333-1111;(71)93333-2222;TravessadosIpês;8;54321-000;JardimdasÁrvores;Salvador;BA
-Bruna Ferreira;Letícia Ferreira;Rafael Ferreira;21/02/1999;(41)98888-1111;(41)98888-2222;RuadasMontanhas;50;67890-123;BosqueVerde;Curitiba;PR
-André Oliveira;Carla Oliveira;Ricardo Oliveira;15/07/1986;(51)94444-1111;(51)94444-2222;AlamedadosPássaros;31;12345-678;JardimdasAves;PortoAlegre;RS
-Luana Rodrigues;Ana Rodrigues;Pedro Rodrigues;09/10/1992;(85)95555-1111;(85)95555-2222;PraçadasPalmeiras;20;34567-890;ViladasPalmeiras;Fortaleza;CE
-Marcos Almeida;Beatriz Almeida;Gustavo Almeida;03/04/1981;(61)92222-1111;(61)92222-2222;RuadosVentos;75;98765-432;Centro;Brasília;DF
-Gabriela Martins;Helena Martins;Tiago Martins;27/09/1995;(62)91111-1111;(62)91111-2222;AvenidadasEstrelas;55;45678-000;EstreladoSul;Goiânia;GO
-Luiz Costa;Lúcia Costa;Alexandre Costa;14/12/1988;(27)98888-1111;(27)98888-2222;TravessadasOndas;45;23456-789;PraiaAzul;Vitória;ES
-Isadora Fernandes;Letícia Fernandes;Márcio Fernandes;08/05/1993;(31)97777-1111;(31)97777-2222;RuadasFlores;40;89012-345;ViladasFlores;BeloHorizonte;MG
-Vinícius Lima;Carla Lima;João Lima;29/02/1984;(21)94444-1111;(21)94444-2222;PraçadasPedras;80;56789-012;PedraBranca;RiodeJaneiro;RJ
-Laura Barbosa;Maria Barbosa;Paulo Barbosa;16/05/1997;(51)95555-1111;(51)95555-2222;AlamedadasFlores;10;54321-000;FloresdoCampo;PortoAlegre;RS
-Diogo Pereira;Márcia Pereira;Felipe Pereira;30/08/1991;(81)92222-1111;(81)92222-2222;RuadasCoqueiros;50;12345-678;JardimdosCoqueiros;Recife;PE
-Vanessa Silva;Letícia Silva;Ricardo Silva;24/07/1996;(11)95555-1111;(11)95555-2222;PraçadasÁguas;20;67890-123;Centro;SãoPaulo;SP
-Gustavo Sousa;Juliana Sousa;Antonio Sousa;11/06/1989;(31)94444-1111;(31)94444-2222;AvenidadosAndorinhas;7;54321-000;JardimdasAndorinhas;BeloHorizonte;MG
-Manuela Santos;Carla Santos;Lucas Santos;02/09/1994;(21)94444-1111;(21)94444-2222;RuadasFlores;45;89012-345;ViladasFlores;RiodeJaneiro;RJ
-Guilherme Oliveira;Mariana Oliveira;André Oliveira;10/11/1983;(71)92222-1111;(71)92222-2222;TravessadosIpês;15;45678-000;JardimdasÁrvores;Salvador;BA
-Mariana Ferreira;Letícia Ferreira;Rafael Ferreira;21/02/1999;(41)92222-1111;(41)92222-2222;RuadasMontanhas;22;67890-123;BosqueVerde;Curitiba;PR
-Eduardo Oliveira;Carla Oliveira;Ricardo Oliveira;15/07/1986;(51)91111-1111;(51)91111-2222;AlamedadosPássaros;15;12345-678;JardimdasAves;PortoAlegre;RS
-Laura Rodrigues;Ana Rodrigues;Pedro Rodrigues;09/10/1992;(85)98888-1111;(85)98888-2222;PraçadasPalmeiras;40;34567-890;ViladasPalmeiras;Fortaleza;CE
-Fernando Almeida;Beatriz Almeida;Gustavo Almeida;03/04/1981;(61)94444-1111;(61)94444-2222;RuadosVentos;25;98765-432;Centro;Brasília;DF
-Beatriz Martins;Helena Martins;Tiago Martins;27/09/1995;(62)92222-1111;(62)92222-2222;AvenidadasEstrelas;65;45678-000;EstreladoSul;Goiânia;GO
-Bruno Costa;Lúcia Costa;Alexandre Costa;14/12/1988;(27)91111-1111;(27)91111-2222;TravessadasOndas;65;23456-789;PraiaAzul;Vitória;ES
-Isabela Fernandes;Letícia Fernandes;Márcio Fernandes;08/05/1993;(31)93333-1111;(31)93333-2222;RuadasFlores;10;89012-345;ViladasFlores;BeloHorizonte;MG
-Vinícius Lima;Carla Lima;João Lima;29/02/1984;(21)92222-1111;(21)92222-2222;PraçadasPedras;40;56789-012;PedraBranca;RiodeJaneiro;RJ
-Pedro Sapaio;Kiriunista da Silva Santos Sousa Sauro;Zezo Pinto;15/15/2015;(85) 8 7272-7277;(  )       -;Rua 2;1;12312-321;Cu Azul;Ceu Azul;GO
+ID;NOME DO ALUNO;NOME DA MÃE;NOME DO PAI;D. NASCIMENTO;CONTATO;CONTATO2;RUA;NUMERO;CEP;BAIRRO;CIDADE;UF
+;João da Silva;MariadaSilva;JosédaSilva;15/02/1985;(11)99999-1111;(11)99999-2222;RuadosLimões;31;12345-000;Limoeiro;SãoPaulo;SP
+;Ana Santos;Laura Santos;Pedro Santos;03/07/1990;(21)98888-1111;(21)98888-2222;RuadasFlores;45;54321-000;JardimdasFlores;RiodeJaneiro;RJ
+;Carlos Pereira;Fernanda Pereira;Ricardo Pereira;22/11/1982;(31)97777-1111;(31)97777-2222;AvenidaPrincipal;101;67890-123;Centro;BeloHorizonte;MG
+;Mariana Ferreira;Beatriz Ferreira;Daniel Ferreira;09/04/1995;(41)96666-1111;(41)96666-2222;TravessadasÁrvores;20;45678-000;BosqueVerde;Curitiba;PR
+;Lucas Oliveira;Sandra Oliveira;Marcelo Oliveira;27/06/1988;(51)95555-1111;(51)95555-2222;AlamedadosPássaros;85;89012-345;JardimdasAves;PortoAlegre;RS
+;Camila Rodrigues;Juliana Rodrigues;André Rodrigues;14/09/1992;(85)94444-1111;(85)94444-2222;PraçadasPalmeiras;10;67890-123;Centro;Fortaleza;CE
+;Rafael Almeida;Paula Almeida;Gustavo Almeida;02/03/1980;(61)93333-1111;(61)93333-2222;RuadasMontanhas;75;23456-789;ValedasPedras;Brasília;DF
+;Letícia Martins;Helena Martins;Tiago Martins;11/12/1998;(62)92222-1111;(62)92222-2222;AvenidadasEstrelas;50;34567-890;EstreladoSul;Goiânia;GO
+;Gustavo Costa;Lúcia Costa;Alexandre Costa;05/10/1987;(27)91111-1111;(27)91111-2222;RuadasOndas;80;12345-678;PraiaAzul;Vitória;ES
+;Isabela Fernandes;Letícia Fernandes;Márcio Fernandes;17/11/1993;(31)98888-1111;(31)98888-2222;AvenidadosVentos;29;89012-345;ViladoVento;BeloHorizonte;MG
+;Marcelo Lima;Carla Lima;João Lima;30/05/1984;(21)97777-1111;(21)97777-2222;RuadasPedras;92;45678-000;PedraBranca;RiodeJaneiro;RJ
+;Larissa Barbosa;Maria Barbosa;Paulo Barbosa;12/08/1997;(51)96666-1111;(51)96666-2222;TravessadasFlores;70;98765-432;FloresdoCampo;PortoAlegre;RS
+;Thiago Pereira;Márcia Pereira;Felipe Pereira;25/01/1991;(81)95555-1111;(81)95555-2222;AlamedadosCoqueiros;15;23456-789;JardimdosCoqueiros;Recife;PE
+;Amanda Silva;Letícia Silva;Ricardo Silva;08/06/1996;(11)94444-1111;(11)94444-2222;PraçadasÁguas;5;67890-123;Centro;SãoPaulo;SP
+;Eduardo Sousa;Juliana Sousa;Antonio Sousa;19/03/1989;(31)92222-1111;(31)92222-2222;AvenidadasAndorinhas;25;56789-012;JardimdasAndorinhas;BeloHorizonte;MG
+;Beatriz Santos;Carla Santos;Lucas Santos;02/09/1994;(21)91111-1111;(21)91111-2222;RuadasFlores;15;89012-345;ViladasFlores;RiodeJaneiro;RJ
+;Rodrigo Oliveira;Mariana Oliveira;André Oliveira;10/11/1983;(71)93333-1111;(71)93333-2222;TravessadosIpês;8;54321-000;JardimdasÁrvores;Salvador;BA
+;Bruna Ferreira;Letícia Ferreira;Rafael Ferreira;21/02/1999;(41)98888-1111;(41)98888-2222;RuadasMontanhas;50;67890-123;BosqueVerde;Curitiba;PR
+;André Oliveira;Carla Oliveira;Ricardo Oliveira;15/07/1986;(51)94444-1111;(51)94444-2222;AlamedadosPássaros;31;12345-678;JardimdasAves;PortoAlegre;RS
+;Luana Rodrigues;Ana Rodrigues;Pedro Rodrigues;09/10/1992;(85)95555-1111;(85)95555-2222;PraçadasPalmeiras;20;34567-890;ViladasPalmeiras;Fortaleza;CE
+;Marcos Almeida;Beatriz Almeida;Gustavo Almeida;03/04/1981;(61)92222-1111;(61)92222-2222;RuadosVentos;75;98765-432;Centro;Brasília;DF
+;Gabriela Martins;Helena Martins;Tiago Martins;27/09/1995;(62)91111-1111;(62)91111-2222;AvenidadasEstrelas;55;45678-000;EstreladoSul;Goiânia;GO
+;Luiz Costa;Lúcia Costa;Alexandre Costa;14/12/1988;(27)98888-1111;(27)98888-2222;TravessadasOndas;45;23456-789;PraiaAzul;Vitória;ES
+;Isadora Fernandes;Letícia Fernandes;Márcio Fernandes;08/05/1993;(31)97777-1111;(31)97777-2222;RuadasFlores;40;89012-345;ViladasFlores;BeloHorizonte;MG
+;Vinícius Lima;Carla Lima;João Lima;29/02/1984;(21)94444-1111;(21)94444-2222;PraçadasPedras;80;56789-012;PedraBranca;RiodeJaneiro;RJ
+;Laura Barbosa;Maria Barbosa;Paulo Barbosa;16/05/1997;(51)95555-1111;(51)95555-2222;AlamedadasFlores;10;54321-000;FloresdoCampo;PortoAlegre;RS
+;Diogo Pereira;Márcia Pereira;Felipe Pereira;30/08/1991;(81)92222-1111;(81)92222-2222;RuadasCoqueiros;50;12345-678;JardimdosCoqueiros;Recife;PE
+;Vanessa Silva;Letícia Silva;Ricardo Silva;24/07/1996;(11)95555-1111;(11)95555-2222;PraçadasÁguas;20;67890-123;Centro;SãoPaulo;SP
+;Gustavo Sousa;Juliana Sousa;Antonio Sousa;11/06/1989;(31)94444-1111;(31)94444-2222;AvenidadosAndorinhas;7;54321-000;JardimdasAndorinhas;BeloHorizonte;MG
+;Manuela Santos;Carla Santos;Lucas Santos;02/09/1994;(21)94444-1111;(21)94444-2222;RuadasFlores;45;89012-345;ViladasFlores;RiodeJaneiro;RJ
+;Guilherme Oliveira;Mariana Oliveira;André Oliveira;10/11/1983;(71)92222-1111;(71)92222-2222;TravessadosIpês;15;45678-000;JardimdasÁrvores;Salvador;BA
+;Mariana Ferreira;Letícia Ferreira;Rafael Ferreira;21/02/1999;(41)92222-1111;(41)92222-2222;RuadasMontanhas;22;67890-123;BosqueVerde;Curitiba;PR
+;Eduardo Oliveira;Carla Oliveira;Ricardo Oliveira;15/07/1986;(51)91111-1111;(51)91111-2222;AlamedadosPássaros;15;12345-678;JardimdasAves;PortoAlegre;RS
+;Laura Rodrigues;Ana Rodrigues;Pedro Rodrigues;09/10/1992;(85)98888-1111;(85)98888-2222;PraçadasPalmeiras;40;34567-890;ViladasPalmeiras;Fortaleza;CE
+;Fernando Almeida;Beatriz Almeida;Gustavo Almeida;03/04/1981;(61)94444-1111;(61)94444-2222;RuadosVentos;25;98765-432;Centro;Brasília;DF
+;Beatriz Martins;Helena Martins;Tiago Martins;27/09/1995;(62)92222-1111;(62)92222-2222;AvenidadasEstrelas;65;45678-000;EstreladoSul;Goiânia;GO
+;Bruno Costa;Lúcia Costa;Alexandre Costa;14/12/1988;(27)91111-1111;(27)91111-2222;TravessadasOndas;65;23456-789;PraiaAzul;Vitória;ES
+;Isabela Fernandes;Letícia Fernandes;Márcio Fernandes;08/05/1993;(31)93333-1111;(31)93333-2222;RuadasFlores;10;89012-345;ViladasFlores;BeloHorizonte;MG
+;Vinícius Lima;Carla Lima;João Lima;29/02/1984;(21)92222-1111;(21)92222-2222;PraçadasPedras;40;56789-012;PedraBranca;RiodeJaneiro;RJ
+;Pedro Sapaio;Kiriunista da Silva Santos Sousa Sauro;Zezo Pinto;15/15/2015;(85) 8 7272-7277;(  )       -;Rua 2;1;12312-321;Cu Azul;Ceu Azul;GO
+;Calos Magno;Pedrita Magno;Jean Magno;02/02/2002;(62) 9 9999-9999;(62) 9 9999-9999;Dos Frangos;21;74000-000;Granja;Simba;SP
+265268;teste;teste;teste;02/02/0202;(11) 1 1111-1111;(11) 1 1111-1111;teste;77;77777-777;teste;test;te
+297948;Teste1;Teste1;Teste1;11/11/1111;(66) 6 6666-6666;(66) 6 6666-6666;Teste1;12;11111-111;Teste1;Teste1;TE
+331950;Zeca Camargo;Marilda Camargo;Joao Camargo;11/11/1111;(11) 1 1111-1111;(11) 1 1111-1111;das ruas;11;11111-111;bairro;cidade1;ff
