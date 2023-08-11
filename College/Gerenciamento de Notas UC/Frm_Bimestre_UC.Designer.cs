@@ -390,6 +390,7 @@
             this.Btn_Salvar.TabIndex = 24;
             this.Btn_Salvar.Text = "Salvar";
             this.Btn_Salvar.UseVisualStyleBackColor = true;
+            this.Btn_Salvar.Click += new System.EventHandler(this.Btn_Salvar_Click);
             // 
             // Btn_Limpar
             // 

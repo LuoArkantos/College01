@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Runtime.CompilerServices;
+using System.Runtime.ConstrainedExecution;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
 using System.Text;
@@ -14,7 +16,8 @@ namespace Cls_Uteis
 {
     public class Cls_Aluno
     {
-        public string ID { get; private set; }
+        //Dados de aluno
+        public string ID { get; set; }
         public string Nome { get; set; }
         public string NomeMae { get; set; }
         public string NomePai { get; set; }
@@ -28,11 +31,45 @@ namespace Cls_Uteis
         public string Cidade { get; set; }
         public string Uf { get; set; }
 
+        // notas
+        public string Caderno { get; set; }
+        public string Trabalhos { get; set; }
+        public string Prova { get; set; }
+        public string Complementar { get; set; }
+
+
+
         public Cls_Aluno()
         {
         
         }
-        
+
+        public static void LancarNotas(string id, string caderno, string trabalho, string prova, string complementar)
+        {
+            var caminhoDoArquivo = "boletin.csv"; //diretório para onde vai exportar os dados
+
+            //new FileStream(caminhoDoArquivo, FileMode.Open);
+            using (var fluxoDeArquivo = new FileStream(caminhoDoArquivo, FileMode.Append))
+            {
+                Cls_Aluno aluno = new Cls_Aluno();
+
+                aluno.ID = id;
+
+                aluno.Caderno = caderno;
+                aluno.Trabalhos = trabalho;
+                aluno.Prova = prova;
+                aluno.Complementar = complementar;
+
+                var dadosAluno = $"\n{id};{caderno};{trabalho};{prova};{complementar}";//Dado q vai ser colocado no documento
+
+                var encoding = Encoding.UTF8; //cria encoding pra converter os bytes
+
+                var bytes = encoding.GetBytes(dadosAluno);//vai converter os bytes para char
+
+                fluxoDeArquivo.Write(bytes, 0, bytes.Length);//vai escrever a var bytes(que é os dados da conta convertidos para UTF8), desde o índice 0 do fluxo, até o tamanho do fluxo... usa length pq não sabemos o tamanho de bytes do fluxo.. assim pegamos o tamanho total.
+            }
+        }
+
         public static void CadastrarAluno(string id, string nome, string nomeMae, string nomePai, string nascimento, string telefone1, string telefone2, string rua, string numero, string cep, string bairro, string cidade, string uf)
 
         {
