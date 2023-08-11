@@ -55,13 +55,14 @@ namespace College
         }
         private void Btn_GerirNotas_Click(object sender, EventArgs e)
         {
+            int id = int.Parse(Dgv_Lista.CurrentRow.Cells[0].Value.ToString());
+
             Frm_GerenciamentoDeNotas gerenciamento = new Frm_GerenciamentoDeNotas();
             Frm_DadosDoAluno_UC d = new Frm_DadosDoAluno_UC();
-            int indice = Dgv_Lista.CurrentRow.Index + 1;
-            gerenciamento.GetIndex = indice;
-            d.GetIndex = indice;
 
-            MessageBox.Show($"indice: {indice}", "indicce", MessageBoxButtons.OK); //Testar se pegava o index
+            gerenciamento.GetId = id;
+            d.GetId = id;
+
             this.Hide();
             gerenciamento.ShowDialog();
             this.Show();

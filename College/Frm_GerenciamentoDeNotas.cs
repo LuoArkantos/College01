@@ -19,12 +19,12 @@ namespace College
         {
             InitializeComponent();
         }
-        public int GetIndex { get; set; }
+        public int GetId { get; set; }
         
         private void Btn_ShowDadosDoAluno_Click(object sender, EventArgs e)
         {
             Frm_DadosDoAluno_UC u = new Frm_DadosDoAluno_UC();
-            u.GetIndex = this.GetIndex;
+            u.GetId = this.GetId;
             TabPage tab = new TabPage();
 
             u.Dock = DockStyle.Fill;
@@ -71,11 +71,16 @@ namespace College
         private void Frm_GerenciamentoDeNotas_Load(object sender, EventArgs e)
         {
             string[] lista = File.ReadAllLines("RelacaoDeAlunos.csv");
-            string [] alunos = lista[GetIndex].Split(';');
 
-            Lbl_NomeAluno.Text = $"Aluno(a): {alunos[1]}";
-            Lbl_ShowID.Text = $"ID: {alunos[0]}";
+            for (int i = 0; i < lista.Length; i++)
+            {
+                string[] linha = lista[i].Split(';');
+                if (linha[0].Equals(GetId.ToString()))
+                {
+                    Lbl_NomeAluno.Text = $"Aluno(a): {linha[1]}";
+                    Lbl_ShowID.Text = $"ID: {linha[0]}";
+                }                
+            }
         }
-
     }
 }
