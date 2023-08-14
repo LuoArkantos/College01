@@ -36,13 +36,13 @@ namespace College
 
         private void Frm_Bimestre_UC_Load(object sender, EventArgs e)
         {
-            double totalAtv = double.Parse(Msk_TotalLiteralAtv.Text);
-            double totalTrab = double.Parse(Msk_TotalLiteralTrab.Text);
-            double totalProva = double.Parse(Msk_TotalLiteralProva.Text);
+            double totalAtv = double.Parse(Txt_TotalLiteralAtv.Text);
+            double totalTrab = double.Parse(Txt_TotalLiteralTrab.Text);
+            double totalProva = double.Parse(Txt_TotalLiteralProva.Text);
             TotalAtv = totalAtv;
             TotalTrab = totalTrab;
             TotalProva = totalProva;
-
+            Rad_cad0.Checked = true;
             MessageBox.Show(GetId.ToString());
         }
         private void Btn_Salvar_Click(object sender, EventArgs e)
@@ -50,32 +50,29 @@ namespace College
             //notas dinamicas
 
             string numeroAtvCad = panel1.Controls.OfType<RadioButton>().SingleOrDefault(RadioButton => RadioButton.Checked).Text;
-            string trab1 = Msk_NotaTrab1.Text;
-            string trab2 = Msk_NotaTrab2.Text;
-            string prova = Msk_NotaProva.Text;
+            string trab1 = Txt_NotaTrab1.Text;
+            string trab2 = Txt_NotaTrab2.Text;
+            string prova = Txt_NotaProva.Text;
 
             //literais
-            string totalCaderno = Msk_TotalLiteralAtv.Text;
-            string totalTrabalhos = Msk_TotalLiteralTrab.Text;
-            string totalProva = Msk_TotalLiteralProva.Text;
+            string totalCaderno = Txt_TotalLiteralAtv.Text;
+            string totalTrabalhos = Txt_TotalLiteralTrab.Text;
+            string totalProva = Txt_TotalLiteralProva.Text;
 
-            string complemento = Msk_TotalLiteralAtv.Text;
+            string complemento = Txt_TotalLiteralAtv.Text;
 
             string mediaFinal = Lbl_ResultadoMedia.Text;
 
-            Cls_Aluno.LancarNotas(GetId.ToString(),numeroAtvCad,totalCaderno,trab1,trab2,totalTrabalhos,prova,totalProva,complemento,mediaFinal);
+            if ((Btn_SaveCad.BackColor == Color.Green) && (Btn_SaveTrab.BackColor == Color.Green) && (Btn_SaveProva.BackColor == Color.Green))
+            {
+                Cls_Aluno.LancarNotas(GetId.ToString(), numeroAtvCad, totalCaderno, trab1, trab2, totalTrabalhos, prova, totalProva, complemento, mediaFinal);
 
-            //boletin.ID = GetId.ToString();
-
-            //boletin.QntdAtvCad = numeroAtvCad;
-            //boletin.Trab1 = trab1;
-            //boletin.Trab2 = trab2;
-            //boletin.NotaProva = prova;
-
-            //boletin.CadernoLiteral = totalCaderno;
-            //boletin.TrabalhosLiteral = totalTrabalhos;
-            //boletin.ProvaLiteral = totalProva;
-
+                MessageBox.Show("NOTAS SALVAS COM SUCESSO", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                MessageBox.Show("Confirme as notas antes de salvar");
+            }
         }
 
         private void Btn_SaveCad_Click(object sender, EventArgs e)
@@ -96,16 +93,17 @@ namespace College
 
             TotalAtv = totalCaderno;
 
-            Msk_TotalLiteralAtv.Text = totalCaderno.ToString();
+            Txt_TotalLiteralAtv.Text = totalCaderno.ToString();
 
             MostrarMedia();
+            Btn_SaveCad.BackColor = Color.Green;
 
         }
 
         private void Btn_SaveTrab_Click(object sender, EventArgs e)
         {
-            double trab1 = double.Parse(Msk_NotaTrab1.Text);
-            double trab2 = double.Parse(Msk_NotaTrab2.Text);
+            double trab1 = double.Parse(Txt_NotaTrab1.Text.Replace('.',','));
+            double trab2 = double.Parse(Txt_NotaTrab2.Text.Replace('.', ','));
 
             double literal = (trab1+trab2)/2;
             double multiplicador = 0.30;
@@ -113,27 +111,29 @@ namespace College
             
             TotalTrab = totalTrabalhos;
 
-            Msk_TotalLiteralTrab.Text = totalTrabalhos.ToString();
+            Txt_TotalLiteralTrab.Text = totalTrabalhos.ToString();
 
             MostrarMedia();
+            Btn_SaveTrab.BackColor = Color.Green;
+
 
         }
 
         private void Btn_SaveProva_Click(object sender, EventArgs e)
         {
-            double prova = double.Parse(Msk_NotaProva.Text);
+            double prova = double.Parse(Txt_NotaProva.Text.Replace('.', ','));
             double multiplicador = 0.5;
 
             double totalProva = prova * multiplicador;
 
             TotalProva = totalProva;
 
-            Msk_TotalLiteralProva.Text = totalProva.ToString();
+            Txt_TotalLiteralProva.Text = totalProva.ToString();
 
             MostrarMedia();
+            Btn_SaveProva.BackColor = Color.Green;
+
 
         }
-
-
     }
 }
