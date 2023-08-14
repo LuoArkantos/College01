@@ -49,6 +49,7 @@ namespace College
         {
             Frm_Bimestre_UC u = new Frm_Bimestre_UC();
             TabPage tab = new TabPage();
+            u.GetId = this.GetId;
 
             u.Dock = DockStyle.Fill;
             tab.Name = "Bimestre";

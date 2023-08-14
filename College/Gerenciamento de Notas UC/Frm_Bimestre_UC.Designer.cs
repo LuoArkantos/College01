@@ -43,9 +43,12 @@
             this.Rad_cad3 = new System.Windows.Forms.RadioButton();
             this.Rad_cad5 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Rad_cad0 = new System.Windows.Forms.RadioButton();
+            this.Btn_SaveCad = new System.Windows.Forms.Button();
             this.Msk_TotalLiteralAtv = new System.Windows.Forms.MaskedTextBox();
             this.Lbl_TotalLiteralAtv = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Btn_SaveTrab = new System.Windows.Forms.Button();
             this.Msk_TotalLiteralTrab = new System.Windows.Forms.MaskedTextBox();
             this.Lbl_TotalLiteralTrab = new System.Windows.Forms.Label();
             this.Lbl_Trab2 = new System.Windows.Forms.Label();
@@ -53,6 +56,7 @@
             this.Msk_NotaTrab2 = new System.Windows.Forms.MaskedTextBox();
             this.Msk_NotaTrab1 = new System.Windows.Forms.MaskedTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.Btn_SaveProva = new System.Windows.Forms.Button();
             this.Lbl_NotaProva = new System.Windows.Forms.Label();
             this.Msk_NotaProva = new System.Windows.Forms.MaskedTextBox();
             this.Msk_TotalLiteralProva = new System.Windows.Forms.MaskedTextBox();
@@ -166,7 +170,7 @@
             // 
             this.Rad_cad1.AutoSize = true;
             this.Rad_cad1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Rad_cad1.Location = new System.Drawing.Point(138, 39);
+            this.Rad_cad1.Location = new System.Drawing.Point(185, 39);
             this.Rad_cad1.Name = "Rad_cad1";
             this.Rad_cad1.Size = new System.Drawing.Size(31, 17);
             this.Rad_cad1.TabIndex = 16;
@@ -178,7 +182,7 @@
             // 
             this.Rad_cad2.AutoSize = true;
             this.Rad_cad2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Rad_cad2.Location = new System.Drawing.Point(175, 39);
+            this.Rad_cad2.Location = new System.Drawing.Point(222, 39);
             this.Rad_cad2.Name = "Rad_cad2";
             this.Rad_cad2.Size = new System.Drawing.Size(31, 17);
             this.Rad_cad2.TabIndex = 17;
@@ -190,7 +194,7 @@
             // 
             this.Rad_cad4.AutoSize = true;
             this.Rad_cad4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Rad_cad4.Location = new System.Drawing.Point(249, 39);
+            this.Rad_cad4.Location = new System.Drawing.Point(296, 39);
             this.Rad_cad4.Name = "Rad_cad4";
             this.Rad_cad4.Size = new System.Drawing.Size(31, 17);
             this.Rad_cad4.TabIndex = 19;
@@ -202,7 +206,7 @@
             // 
             this.Rad_cad3.AutoSize = true;
             this.Rad_cad3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Rad_cad3.Location = new System.Drawing.Point(212, 39);
+            this.Rad_cad3.Location = new System.Drawing.Point(259, 39);
             this.Rad_cad3.Name = "Rad_cad3";
             this.Rad_cad3.Size = new System.Drawing.Size(31, 17);
             this.Rad_cad3.TabIndex = 18;
@@ -214,7 +218,7 @@
             // 
             this.Rad_cad5.AutoSize = true;
             this.Rad_cad5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.Rad_cad5.Location = new System.Drawing.Point(286, 39);
+            this.Rad_cad5.Location = new System.Drawing.Point(333, 39);
             this.Rad_cad5.Name = "Rad_cad5";
             this.Rad_cad5.Size = new System.Drawing.Size(31, 17);
             this.Rad_cad5.TabIndex = 20;
@@ -225,6 +229,8 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.Rad_cad0);
+            this.panel1.Controls.Add(this.Btn_SaveCad);
             this.panel1.Controls.Add(this.Msk_TotalLiteralAtv);
             this.panel1.Controls.Add(this.Lbl_NotasCaderno);
             this.panel1.Controls.Add(this.Lbl_TotalLiteralAtv);
@@ -239,7 +245,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(598, 91);
             this.panel1.TabIndex = 21;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // Rad_cad0
+            // 
+            this.Rad_cad0.AutoSize = true;
+            this.Rad_cad0.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Rad_cad0.Location = new System.Drawing.Point(148, 39);
+            this.Rad_cad0.Name = "Rad_cad0";
+            this.Rad_cad0.Size = new System.Drawing.Size(31, 17);
+            this.Rad_cad0.TabIndex = 22;
+            this.Rad_cad0.TabStop = true;
+            this.Rad_cad0.Text = "0";
+            this.Rad_cad0.UseVisualStyleBackColor = false;
+            // 
+            // Btn_SaveCad
+            // 
+            this.Btn_SaveCad.Location = new System.Drawing.Point(483, 39);
+            this.Btn_SaveCad.Name = "Btn_SaveCad";
+            this.Btn_SaveCad.Size = new System.Drawing.Size(30, 30);
+            this.Btn_SaveCad.TabIndex = 21;
+            this.Btn_SaveCad.UseVisualStyleBackColor = true;
+            this.Btn_SaveCad.Click += new System.EventHandler(this.Btn_SaveCad_Click);
             // 
             // Msk_TotalLiteralAtv
             // 
@@ -250,6 +276,7 @@
             this.Msk_TotalLiteralAtv.Name = "Msk_TotalLiteralAtv";
             this.Msk_TotalLiteralAtv.Size = new System.Drawing.Size(49, 29);
             this.Msk_TotalLiteralAtv.TabIndex = 15;
+            this.Msk_TotalLiteralAtv.Text = "000";
             // 
             // Lbl_TotalLiteralAtv
             // 
@@ -263,6 +290,7 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.Btn_SaveTrab);
             this.panel2.Controls.Add(this.Msk_TotalLiteralTrab);
             this.panel2.Controls.Add(this.Lbl_TotalLiteralTrab);
             this.panel2.Controls.Add(this.Lbl_Trab2);
@@ -276,15 +304,25 @@
             this.panel2.Size = new System.Drawing.Size(598, 91);
             this.panel2.TabIndex = 22;
             // 
+            // Btn_SaveTrab
+            // 
+            this.Btn_SaveTrab.Location = new System.Drawing.Point(483, 42);
+            this.Btn_SaveTrab.Name = "Btn_SaveTrab";
+            this.Btn_SaveTrab.Size = new System.Drawing.Size(30, 30);
+            this.Btn_SaveTrab.TabIndex = 22;
+            this.Btn_SaveTrab.UseVisualStyleBackColor = true;
+            this.Btn_SaveTrab.Click += new System.EventHandler(this.Btn_SaveTrab_Click);
+            // 
             // Msk_TotalLiteralTrab
             // 
             this.Msk_TotalLiteralTrab.Enabled = false;
             this.Msk_TotalLiteralTrab.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Msk_TotalLiteralTrab.Location = new System.Drawing.Point(519, 43);
-            this.Msk_TotalLiteralTrab.Mask = "00,00";
+            this.Msk_TotalLiteralTrab.Mask = "0,00";
             this.Msk_TotalLiteralTrab.Name = "Msk_TotalLiteralTrab";
             this.Msk_TotalLiteralTrab.Size = new System.Drawing.Size(49, 29);
             this.Msk_TotalLiteralTrab.TabIndex = 13;
+            this.Msk_TotalLiteralTrab.Text = "000";
             // 
             // Lbl_TotalLiteralTrab
             // 
@@ -334,6 +372,7 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.Btn_SaveProva);
             this.panel3.Controls.Add(this.Lbl_NotaProva);
             this.panel3.Controls.Add(this.Msk_NotaProva);
             this.panel3.Controls.Add(this.Msk_TotalLiteralProva);
@@ -344,6 +383,15 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(598, 91);
             this.panel3.TabIndex = 23;
+            // 
+            // Btn_SaveProva
+            // 
+            this.Btn_SaveProva.Location = new System.Drawing.Point(483, 39);
+            this.Btn_SaveProva.Name = "Btn_SaveProva";
+            this.Btn_SaveProva.Size = new System.Drawing.Size(30, 30);
+            this.Btn_SaveProva.TabIndex = 23;
+            this.Btn_SaveProva.UseVisualStyleBackColor = true;
+            this.Btn_SaveProva.Click += new System.EventHandler(this.Btn_SaveProva_Click);
             // 
             // Lbl_NotaProva
             // 
@@ -368,10 +416,11 @@
             this.Msk_TotalLiteralProva.Enabled = false;
             this.Msk_TotalLiteralProva.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Msk_TotalLiteralProva.Location = new System.Drawing.Point(519, 40);
-            this.Msk_TotalLiteralProva.Mask = "00,00";
+            this.Msk_TotalLiteralProva.Mask = "0,00";
             this.Msk_TotalLiteralProva.Name = "Msk_TotalLiteralProva";
             this.Msk_TotalLiteralProva.Size = new System.Drawing.Size(49, 29);
             this.Msk_TotalLiteralProva.TabIndex = 15;
+            this.Msk_TotalLiteralProva.Text = "000";
             // 
             // Lbl_TotalLiteralProva
             // 
@@ -460,5 +509,9 @@
         private System.Windows.Forms.Label Lbl_TotalLiteralProva;
         private System.Windows.Forms.Button Btn_Salvar;
         private System.Windows.Forms.Button Btn_Limpar;
+        private System.Windows.Forms.Button Btn_SaveCad;
+        private System.Windows.Forms.Button Btn_SaveTrab;
+        private System.Windows.Forms.Button Btn_SaveProva;
+        private System.Windows.Forms.RadioButton Rad_cad0;
     }
 }

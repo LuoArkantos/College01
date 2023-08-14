@@ -59,9 +59,11 @@ namespace College
 
             Frm_GerenciamentoDeNotas gerenciamento = new Frm_GerenciamentoDeNotas();
             Frm_DadosDoAluno_UC d = new Frm_DadosDoAluno_UC();
+            Frm_Bimestre_UC b = new Frm_Bimestre_UC();
 
             gerenciamento.GetId = id;
             d.GetId = id;
+            b.GetId = id;
 
             this.Hide();
             gerenciamento.ShowDialog();

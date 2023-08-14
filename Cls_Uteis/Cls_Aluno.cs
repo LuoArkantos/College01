@@ -16,6 +16,7 @@ namespace Cls_Uteis
 {
     public class Cls_Aluno
     {
+        #region PROPRIEDADES
         //Dados de aluno
         public string ID { get; set; }
         public string Nome { get; set; }
@@ -32,19 +33,24 @@ namespace Cls_Uteis
         public string Uf { get; set; }
 
         // notas
-        public string Caderno { get; set; }
-        public string Trabalhos { get; set; }
-        public string Prova { get; set; }
+        public string QntdAtvCad { get; set; }
+        public string Trab1 { get; set; }
+        public string Trab2 { get; set; }
+        public string NotaProva { get; set; }
+        public string CadernoLiteral { get; set; }
+        public string TrabalhosLiteral { get; set; }
+        public string ProvaLiteral { get; set; }
         public string Complementar { get; set; }
+        public string MediaFinal { get; set; }
 
-
+        #endregion
 
         public Cls_Aluno()
         {
         
         }
 
-        public static void LancarNotas(string id, string caderno, string trabalho, string prova, string complementar)
+        public static void LancarNotas(string id, string qntCaderno,string cadernoliteral,string trab1, string trab2, string trabalholiteral, string prova, string provaliteral, string complementar, string mediafinal)
         {
             var caminhoDoArquivo = "boletin.csv"; //diretório para onde vai exportar os dados
 
@@ -55,12 +61,19 @@ namespace Cls_Uteis
 
                 aluno.ID = id;
 
-                aluno.Caderno = caderno;
-                aluno.Trabalhos = trabalho;
-                aluno.Prova = prova;
+                aluno.QntdAtvCad = qntCaderno;
+                aluno.Trab1 = trab1;
+                aluno.Trab2 = trab2;
+                aluno.NotaProva = prova;
+                
+                aluno.CadernoLiteral = cadernoliteral;
+                aluno.TrabalhosLiteral = trabalholiteral;
+                aluno.ProvaLiteral = provaliteral;
                 aluno.Complementar = complementar;
 
-                var dadosAluno = $"\n{id};{caderno};{trabalho};{prova};{complementar}";//Dado q vai ser colocado no documento
+                aluno.MediaFinal = mediafinal;
+
+                var dadosAluno = $"\n{id};{qntCaderno};{cadernoliteral};{trab1};{trab2};{trabalholiteral};{prova};{provaliteral};{complementar};{mediafinal}";//Dado q vai ser colocado no documento
 
                 var encoding = Encoding.UTF8; //cria encoding pra converter os bytes
 
