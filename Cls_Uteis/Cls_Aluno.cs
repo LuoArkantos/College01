@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -54,6 +55,17 @@ namespace Cls_Uteis
         {
             var caminhoDoArquivo = "boletin.csv"; //diretório para onde vai exportar os dados
 
+            string[] lista = File.ReadAllLines(caminhoDoArquivo);
+
+            foreach (string linhas in lista)
+            {
+                var linha = linhas.Split(';');
+
+                    if (linha[0].Equals(id))
+                    {
+                    linhas.Remove(0, linha.Count());
+                    }
+            }
             //new FileStream(caminhoDoArquivo, FileMode.Open);
             using (var fluxoDeArquivo = new FileStream(caminhoDoArquivo, FileMode.Append))
             {
@@ -73,7 +85,8 @@ namespace Cls_Uteis
 
                 aluno.MediaFinal = mediafinal;
 
-
+                
+                
 
                 var dadosAluno = $"\n{id};{qntCaderno};{cadernoliteral};{trab1};{trab2};{trabalholiteral};{prova};{provaliteral};{complementar};{mediafinal}";//Dado q vai ser colocado no documento
 
@@ -84,6 +97,25 @@ namespace Cls_Uteis
                 fluxoDeArquivo.Write(bytes, 0, bytes.Length);//vai escrever a var bytes(que é os dados da conta convertidos para UTF8), desde o índice 0 do fluxo, até o tamanho do fluxo... usa length pq não sabemos o tamanho de bytes do fluxo.. assim pegamos o tamanho total.
             }
         }
+
+        //public static bool NotasExistentes(string id)
+        //{
+        //    var caminhoDoArquivo = "boletin.csv"; //diretório para onde vai exportar os dados
+
+        //    string[] lista = File.ReadAllLines(caminhoDoArquivo);
+        //    foreach (string linha in lista)
+        //    {
+        //        string[] Id = linha.Split(';');
+
+        //        if (Id.Equals(id))
+        //        {
+        //            return true;
+        //        }
+        //        return false;
+        //    }
+        //    return false;
+        //}
+
 
         public static void CadastrarAluno(string id, string nome, string nomeMae, string nomePai, string nascimento, string telefone1, string telefone2, string rua, string numero, string cep, string bairro, string cidade, string uf)
 
