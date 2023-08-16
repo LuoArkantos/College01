@@ -74,6 +74,7 @@ namespace Cls_Uteis
                 aluno.MediaFinal = mediafinal;
 
 
+
                 var dadosAluno = $"\n{id};{qntCaderno};{cadernoliteral};{trab1};{trab2};{trabalholiteral};{prova};{provaliteral};{complementar};{mediafinal}";//Dado q vai ser colocado no documento
 
                 var encoding = Encoding.UTF8; //cria encoding pra converter os bytes
